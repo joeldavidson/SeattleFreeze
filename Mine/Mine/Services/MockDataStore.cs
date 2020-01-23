@@ -30,13 +30,12 @@ namespace Mine.Services
         {
             datalist = new List<ItemModel>()
             {
-                new ItemModel { Name = "First item", Description="This is an item description." },
-                new ItemModel { Name = "Second item", Description="This is an item description." },
-                new ItemModel { Name = "Third item", Description="This is an item description." },
-                new ItemModel { Name = "Fourth item", Description="This is an item description." },
-                new ItemModel { Name = "Fifth item", Description="This is an item description." },
-                new ItemModel { Name = "Sixth item", Description="This is an item description." }
-            };
+                new ItemModel { Name = "Valentines Avenger", Description="This broken heart shaped axe sings justice for those singles on V-Day.", Value = 6 },
+                new ItemModel { Name = "Lonely Laser", Description="This laser increases in power with every person who doesn't' know your last name!", Value = 10 },
+                new ItemModel { Name = "'Why Me' Baseball Bat", Description="To swing pointlessly at tree stumps come valentine's day." },
+                new ItemModel { Name = "Xus Evol", Description="An ancient alien brought this sword to Earth and quickly departed without it when he couldn't get a date to 'War of the Worlds' in theaters.", Value= 2 },
+                new ItemModel { Name = "Rapid Rejection", Description="Capable of defeating the hopes of scores of men in mere seconds, this is truly a rifle to be feared.", Value = 10 }
+                };
 
             return true;
         }
