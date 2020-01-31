@@ -16,14 +16,14 @@ namespace Mine.Views
     public partial class ItemDeletePage : ContentPage
     {
         // View Model for Item
-        ItemViewModel viewModel;
+        ItemViewModel ViewModel;
 
         // Constructor for Delete takes a view model of what to delete
         public ItemDeletePage(ItemViewModel data)
         {
             InitializeComponent();
 
-            BindingContext = this.viewModel = data;
+            BindingContext = this.ViewModel = data;
         }
 
         /// <summary>
@@ -33,11 +33,8 @@ namespace Mine.Views
         /// <param name="e"></param>
         async void Delete_Clicked(object sender, EventArgs e)
         {
-            MessagingCenter.Send(this, "Delete", viewModel.Data);
-
-            Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
-
-            await Navigation.PopAsync();
+            MessagingCenter.Send(this, "Delete", ViewModel.Data);
+            await Navigation.PopModalAsync();
         }
 
         /// <summary>
@@ -47,9 +44,12 @@ namespace Mine.Views
         /// <param name="e"></param>
         async void Cancel_Clicked(object sender, EventArgs e)
         {
-            Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count - 2]);
+            await Navigation.PopModalAsync();
+        }
 
-            await Navigation.PopAsync();
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
         }
     }
 }
