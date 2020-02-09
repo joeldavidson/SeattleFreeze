@@ -1,4 +1,4 @@
-﻿namespace Mine.Models
+﻿namespace PrimeAssault.Models
 {
     /// <summary>
     /// List of items to show in the Menu

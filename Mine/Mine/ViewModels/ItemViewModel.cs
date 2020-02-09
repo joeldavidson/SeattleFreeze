@@ -1,6 +1,6 @@
-﻿using Mine.Models;
+﻿using PrimeAssault.Models;
 
-namespace Mine.ViewModels
+namespace PrimeAssault.ViewModels
 {
     public class ItemViewModel : BaseViewModel
     {

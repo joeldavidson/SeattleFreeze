@@ -1,8 +1,8 @@
 ﻿using Xamarin.Forms;
-using Mine.Services;
-using Mine.Views;
+using PrimeAssault.Services;
+using PrimeAssault.Views;
 
-namespace Mine
+namespace PrimeAssault
 {
     /// <summary>
     /// Main Application entry point

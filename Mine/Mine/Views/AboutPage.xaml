@@ -4,8 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Mine.Views.AboutPage"
-             xmlns:vm="clr-namespace:Mine.ViewModels"
+             x:Class="PrimeAssault.Views.AboutPage"
+             xmlns:vm="clr-namespace:PrimeAssault.ViewModels"
              Title="{Binding Title}">
     
     <ContentPage.BindingContext>
@@ -35,7 +35,7 @@
         <ScrollView Grid.Row="1">
             <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
                 <Label Text="CPSC 4025 WQ20"></Label>
-                <Label Text="Joel Davidson"></Label>
+                <Label Text="Marco Rodriguez, Blake Werner, Joel Davidson"></Label>
                 <Label x:Name="CurrentDateTime"></Label>
             </StackLayout>
         </ScrollView>
