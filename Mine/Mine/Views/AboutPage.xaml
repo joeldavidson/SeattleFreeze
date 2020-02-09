@@ -37,6 +37,7 @@
                 <Label Text="CPSC 4025 WQ20"></Label>
                 <Label Text="Blake Werner, Marco Rodriguez, Joel Davidson"></Label>
                 <Label x:Name="CurrentDateTime"></Label>
+                <Label Text="Description: This page is vestigal from our previous homeworks and we can change it later. For now, we focus on the character class. "></Label>
             </StackLayout>
         </ScrollView>
     </Grid>
