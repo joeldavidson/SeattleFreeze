@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=da248c2b-88ec-4943-bf3b-bbb676884b61</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>93F72E240402EA6A8039D4EB07C0D7EBB942235FE55C44E45F95355461A2CA0E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c4addf70-3a00-4a23-87a8-817786570573_1.0.0.0_x86__2nm028ex10k4y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c4addf70-3a00-4a23-87a8-817786570573_2nm028ex10k4y!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-09T05:02:23.885</Modified>
+      <Modified>2020-02-09T05:21:43.939</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\bin\x86\Debug\Mine.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\Mine.UWP.exe">
       <PackagePath>entrypoint\Mine.UWP.exe</PackagePath>
-      <Modified>2020-02-09T05:02:22.110</Modified>
+      <Modified>2020-02-09T05:21:42.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -66,9 +66,9 @@
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
       <Modified>2019-12-10T08:29:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine\bin\Debug\netstandard2.0\Mine.dll">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine\bin\Debug\netstandard2.0\Mine.dll">
       <PackagePath>Mine.dll</PackagePath>
-      <Modified>2020-02-09T05:02:56.566</Modified>
+      <Modified>2020-02-09T05:21:34.949</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -82,196 +82,196 @@
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
       <Modified>2019-12-10T08:29:32.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\icon_add.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\icon_add.png">
       <PackagePath>icon_add.png</PackagePath>
-      <Modified>2020-01-31T05:26:00.967</Modified>
+      <Modified>2020-02-09T05:18:48.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\icon_cancel.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\icon_cancel.png">
       <PackagePath>icon_cancel.png</PackagePath>
-      <Modified>2020-01-31T05:26:00.941</Modified>
+      <Modified>2020-02-09T05:18:48.915</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\icon_delete.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\icon_delete.png">
       <PackagePath>icon_delete.png</PackagePath>
-      <Modified>2020-01-31T05:26:00.950</Modified>
+      <Modified>2020-02-09T05:18:48.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\icon_edit.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\icon_edit.png">
       <PackagePath>icon_edit.png</PackagePath>
-      <Modified>2020-01-31T05:26:00.955</Modified>
+      <Modified>2020-02-09T05:18:48.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\icon_save.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\icon_save.png">
       <PackagePath>icon_save.png</PackagePath>
-      <Modified>2020-01-31T05:26:00.962</Modified>
+      <Modified>2020-02-09T05:18:48.917</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.283</Modified>
+      <Modified>2020-02-09T05:18:48.724</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.303</Modified>
+      <Modified>2020-02-09T05:18:48.725</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.323</Modified>
+      <Modified>2020-02-09T05:18:48.726</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.354</Modified>
+      <Modified>2020-02-09T05:18:48.727</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.383</Modified>
+      <Modified>2020-02-09T05:18:48.727</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.406</Modified>
+      <Modified>2020-02-09T05:18:48.728</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.424</Modified>
+      <Modified>2020-02-09T05:18:48.729</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.443</Modified>
+      <Modified>2020-02-09T05:18:48.729</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.462</Modified>
+      <Modified>2020-02-09T05:18:48.730</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.480</Modified>
+      <Modified>2020-02-09T05:18:48.731</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.499</Modified>
+      <Modified>2020-02-09T05:18:48.731</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.516</Modified>
+      <Modified>2020-02-09T05:18:48.732</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.535</Modified>
+      <Modified>2020-02-09T05:18:48.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.553</Modified>
+      <Modified>2020-02-09T05:18:48.733</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.572</Modified>
+      <Modified>2020-02-09T05:18:48.734</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.589</Modified>
+      <Modified>2020-02-09T05:18:48.734</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.606</Modified>
+      <Modified>2020-02-09T05:18:48.735</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.626</Modified>
+      <Modified>2020-02-09T05:18:48.735</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.649</Modified>
+      <Modified>2020-02-09T05:18:48.736</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.670</Modified>
+      <Modified>2020-02-09T05:18:48.736</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.688</Modified>
+      <Modified>2020-02-09T05:18:48.737</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.728</Modified>
+      <Modified>2020-02-09T05:18:48.738</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.749</Modified>
+      <Modified>2020-02-09T05:18:48.739</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.768</Modified>
+      <Modified>2020-02-09T05:18:48.739</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.787</Modified>
+      <Modified>2020-02-09T05:18:48.740</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.808</Modified>
+      <Modified>2020-02-09T05:18:48.740</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-01-16T07:36:29.825</Modified>
+      <Modified>2020-02-09T05:18:48.741</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\xamarin_logo.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\xamarin_logo.png">
       <PackagePath>xamarin_logo.png</PackagePath>
-      <Modified>2020-01-16T07:36:29.261</Modified>
+      <Modified>2020-02-09T05:18:48.979</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\add.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\add.png">
       <PackagePath>add.png</PackagePath>
-      <Modified>2020-01-16T07:36:29.201</Modified>
+      <Modified>2020-02-09T05:18:48.746</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\save.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\save.png">
       <PackagePath>save.png</PackagePath>
-      <Modified>2020-01-16T07:36:29.241</Modified>
+      <Modified>2020-02-09T05:18:48.978</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\cancel.png">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\cancel.png">
       <PackagePath>cancel.png</PackagePath>
-      <Modified>2020-01-16T07:36:29.220</Modified>
+      <Modified>2020-02-09T05:18:48.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2020-01-16T07:36:29.881</Modified>
+      <Modified>2020-02-09T05:18:48.745</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\bin\x86\Debug\Mine.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\Mine.UWP.xr.xml">
       <PackagePath>Mine.UWP.xr.xml</PackagePath>
-      <Modified>2020-01-16T20:02:20.141</Modified>
+      <Modified>2020-02-09T05:18:48.958</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
       <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
-      <Modified>2020-02-09T05:02:21.945</Modified>
+      <Modified>2020-02-09T05:21:42.033</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-02-09T05:02:21.945</Modified>
+      <Modified>2020-02-09T05:21:42.034</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-02-09T05:02:21.946</Modified>
+      <Modified>2020-02-09T05:21:42.034</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -285,13 +285,13 @@
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2019-06-07T18:59:06.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-02-09T05:02:22.827</Modified>
+      <Modified>2020-02-09T05:21:42.920</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\40250WQ-Mine-master\40250WQ-LocalProject\40250WQ-LocalProject\Mine\Mine.UWP\bin\x86\Debug\Core\Mine.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\Core\Mine.UWP.exe">
       <PackagePath>Mine.UWP.exe</PackagePath>
-      <Modified>2020-02-09T05:02:23.878</Modified>
+      <Modified>2020-02-09T05:21:43.915</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

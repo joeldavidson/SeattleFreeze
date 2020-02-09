@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine.UWP\\Mine.UWP.csproj": {}
+    "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.UWP\\Mine.UWP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine.UWP\\Mine.UWP.csproj": {
+    "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.UWP\\Mine.UWP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine.UWP\\Mine.UWP.csproj",
+        "projectUniqueName": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.UWP\\Mine.UWP.csproj",
         "projectName": "Mine.UWP",
-        "projectPath": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine.UWP\\Mine.UWP.csproj",
+        "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.UWP\\Mine.UWP.csproj",
         "packagesPath": "C:\\Users\\joeld\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine.UWP\\obj\\",
+        "outputPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.UWP\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -33,8 +33,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\Mine.csproj": {
-                "projectPath": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\Mine.csproj"
+              "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\Mine.csproj": {
+                "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\Mine.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\Mine.csproj": {
+    "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\Mine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\Mine.csproj",
+        "projectUniqueName": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\Mine.csproj",
         "projectName": "Mine",
-        "projectPath": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\Mine.csproj",
+        "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\Mine.csproj",
         "packagesPath": "C:\\Users\\joeld\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\obj\\",
+        "outputPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
