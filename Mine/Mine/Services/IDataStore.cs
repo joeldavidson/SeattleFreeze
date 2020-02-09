@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace PrimeAssault.Services
+namespace Mine.Services
 {
     /// <summary>
     /// Interface for data intreactions

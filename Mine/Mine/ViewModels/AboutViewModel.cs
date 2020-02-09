@@ -1,4 +1,4 @@
-﻿namespace PrimeAssault.ViewModels
+﻿namespace Mine.ViewModels
 {
     /// <summary>
     /// About View Model

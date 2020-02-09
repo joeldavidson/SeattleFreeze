@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeAssault.UWP", "Mine\Mine.UWP\PrimeAssault.UWP.csproj", "{72912D4B-DD12-4C69-A843-59E0FBA47D03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mine.UWP", "Mine\Mine.UWP\Mine.UWP.csproj", "{72912D4B-DD12-4C69-A843-59E0FBA47D03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeAssault.Android", "Mine\Mine.Android\PrimeAssault.Android.csproj", "{6C6555E0-87DA-42DD-9B30-6F6134450569}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mine.Android", "Mine\Mine.Android\Mine.Android.csproj", "{6C6555E0-87DA-42DD-9B30-6F6134450569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeAssault.iOS", "Mine\Mine.iOS\PrimeAssault.iOS.csproj", "{864DE6DF-3D73-4876-9268-0CC12EBAAD3A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mine.iOS", "Mine\Mine.iOS\Mine.iOS.csproj", "{864DE6DF-3D73-4876-9268-0CC12EBAAD3A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeAssault", "Mine\Mine\PrimeAssault.csproj", "{222BB397-2262-433F-B67A-CF3D679BDFF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mine", "Mine\Mine\Mine.csproj", "{222BB397-2262-433F-B67A-CF3D679BDFF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

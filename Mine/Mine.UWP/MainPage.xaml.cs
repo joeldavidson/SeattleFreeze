@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace PrimeAssault.UWP
+namespace Mine.UWP
 {
     public sealed partial class MainPage
     {
@@ -21,7 +21,7 @@ namespace PrimeAssault.UWP
         {
             this.InitializeComponent();
 
-            LoadApplication(new PrimeAssault.App());
+            LoadApplication(new Mine.App());
         }
     }
 }

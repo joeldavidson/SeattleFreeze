@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PrimeAssault.Models
+namespace Mine.Models
 {
     /// <summary>
     /// Base model for records that get saved

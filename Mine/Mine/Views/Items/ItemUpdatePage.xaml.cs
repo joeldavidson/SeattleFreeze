@@ -2,9 +2,9 @@
 using System.ComponentModel;
 using Xamarin.Forms;
 
-using PrimeAssault.ViewModels;
+using Mine.ViewModels;
 
-namespace PrimeAssault.Views
+namespace Mine.Views
 {
     // Learn more about making custom code visible in the Xamarin.Forms previewer
     // by visiting https://aka.ms/xamarinforms-previewer

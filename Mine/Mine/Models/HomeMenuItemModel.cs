@@ -1,4 +1,4 @@
-﻿namespace PrimeAssault.Models
+﻿namespace Mine.Models
 {
     /// <summary>
     /// Home Menu Item Model

@@ -1,9 +1,9 @@
-﻿using PrimeAssault.Models;
+﻿using Mine.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PrimeAssault.Services
+namespace Mine.Services
 {
     public class MockDataStore : IDataStore<ItemModel>
     {
