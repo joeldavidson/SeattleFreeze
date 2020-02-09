@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PrimeAssault.Models
 {
-    class PlayerCharacter : BaseCharacterModel
+    class PlayerCharacterModel : BaseCharacterModel
     {
         int experienceTotal;
         ItemModel Head;
@@ -17,6 +17,11 @@ namespace PrimeAssault.Models
 
         ItemModel[] EquippedArray = new ItemModel[7]; //this array will (for the sake of convenience, contain all the equipment in the order presented above (Head[0], Arms[1], RightHand[2], RightFinger[3], LeftHand[4], LeftFinger[5], Feet[6])
 
+        PlayerCharacterModel()
+        {
+            experienceTotal = 0; // will have to flesh out more if character is created at higher level. Might want constructor which takes int for level
+        }
+        
         bool AddExperience(int experience) // Add experience to current character
         {
             return true;
