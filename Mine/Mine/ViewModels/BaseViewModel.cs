@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Mine.ViewModels
+namespace PrimeAssault.ViewModels
 {
     /// <summary>
     /// Base View Model for Data

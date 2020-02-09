@@ -86,9 +86,9 @@
     <AndroidResource Include="Resources\drawable\xamarin_logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mine\Mine.csproj">
+    <ProjectReference Include="..\Mine\PrimeAssault.csproj">
       <Project>{222BB397-2262-433F-B67A-CF3D679BDFF0}</Project>
-      <Name>Mine</Name>
+      <Name>PrimeAssault</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -10,7 +10,7 @@
   <Identity Name="c4addf70-3a00-4a23-87a8-817786570573" Publisher="CN=da248c2b-88ec-4943-bf3b-bbb676884b61" Version="1.0.0.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="ec0cc741-fd3e-485c-81be-68815c480690" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Mine.UWP</DisplayName>
+    <DisplayName>PrimeAssault.UWP</DisplayName>
     <PublisherDisplayName>da248c2b-88ec-4943-bf3b-bbb676884b61</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -25,8 +25,8 @@
     <Resource Language="EN-US" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="Mine.UWP.exe" EntryPoint="Mine.UWP.App">
-      <uap:VisualElements DisplayName="Mine.UWP" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Mine.UWP" BackgroundColor="transparent">
+    <Application Id="App" Executable="Mine.UWP.exe" EntryPoint="PrimeAssault.UWP.App">
+      <uap:VisualElements DisplayName="PrimeAssault.UWP" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="PrimeAssault.UWP" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />

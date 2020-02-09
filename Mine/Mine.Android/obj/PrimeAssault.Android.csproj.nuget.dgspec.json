@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine.Android\\PrimeAssault.Android.csproj": {}
+    "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.Android\\PrimeAssault.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine.Android\\PrimeAssault.Android.csproj": {
+    "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.Android\\PrimeAssault.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine.Android\\PrimeAssault.Android.csproj",
+        "projectUniqueName": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.Android\\PrimeAssault.Android.csproj",
         "projectName": "PrimeAssault.Android",
-        "projectPath": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine.Android\\PrimeAssault.Android.csproj",
+        "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.Android\\PrimeAssault.Android.csproj",
         "packagesPath": "C:\\Users\\joeld\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine.Android\\obj\\",
+        "outputPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\Mine.csproj": {
-                "projectPath": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\Mine.csproj"
+              "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj": {
+                "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\Mine.csproj": {
+    "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\Mine.csproj",
-        "projectName": "Mine",
-        "projectPath": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\Mine.csproj",
+        "projectUniqueName": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj",
+        "projectName": "PrimeAssault",
+        "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj",
         "packagesPath": "C:\\Users\\joeld\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joeld\\40250WQ-Mine-master\\40250WQ-LocalProject\\40250WQ-LocalProject\\Mine\\Mine\\obj\\",
+        "outputPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

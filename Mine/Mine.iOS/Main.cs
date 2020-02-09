@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Mine.iOS
+namespace PrimeAssault.iOS
 {
     public class Application
     {

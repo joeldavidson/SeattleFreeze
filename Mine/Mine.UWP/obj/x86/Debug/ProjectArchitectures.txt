@@ -1,1 +1,1 @@
-C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\Mine.UWP.csproj;x86
+C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\PrimeAssault.UWP.csproj;x86

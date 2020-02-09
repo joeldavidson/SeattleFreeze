@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Mine.App.xaml", "App.xaml", typeof(global::Mine.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("PrimeAssault.App.xaml", "App.xaml", typeof(global::PrimeAssault.App))]
 
-namespace Mine {
+namespace PrimeAssault {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("App.xaml")]

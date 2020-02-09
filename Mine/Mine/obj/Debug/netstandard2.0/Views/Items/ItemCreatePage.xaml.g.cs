@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Mine.Views.Items.ItemCreatePage.xaml", "Views/Items/ItemCreatePage.xaml", typeof(global::Mine.Views.ItemCreatePage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("PrimeAssault.Views.Items.ItemCreatePage.xaml", "Views/Items/ItemCreatePage.xaml", typeof(global::PrimeAssault.Views.ItemCreatePage))]
 
-namespace Mine.Views {
+namespace PrimeAssault.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Items\\ItemCreatePage.xaml")]

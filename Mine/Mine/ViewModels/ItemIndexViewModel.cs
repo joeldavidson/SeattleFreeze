@@ -1,6 +1,6 @@
-﻿using Mine.Services;
-using Mine.Models;
-using Mine.Views;
+﻿using PrimeAssault.Services;
+using PrimeAssault.Models;
+using PrimeAssault.Views;
 using System.Diagnostics;
 using System;
 using System.Threading.Tasks;
@@ -8,7 +8,7 @@ using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using System.Linq;
 
-namespace Mine.ViewModels
+namespace PrimeAssault.ViewModels
 {
     /// <summary>
     /// Index View Model

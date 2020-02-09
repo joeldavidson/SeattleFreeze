@@ -33,8 +33,8 @@
         "frameworks": {
           "uap10.0.16299": {
             "projectReferences": {
-              "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\Mine.csproj": {
-                "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\Mine.csproj"
+              "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj": {
+                "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj"
               }
             }
           }
@@ -87,12 +87,12 @@
         }
       }
     },
-    "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\Mine.csproj": {
+    "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\Mine.csproj",
-        "projectName": "Mine",
-        "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\Mine.csproj",
+        "projectUniqueName": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj",
+        "projectName": "PrimeAssault",
+        "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj",
         "packagesPath": "C:\\Users\\joeld\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\obj\\",
         "projectStyle": "PackageReference",

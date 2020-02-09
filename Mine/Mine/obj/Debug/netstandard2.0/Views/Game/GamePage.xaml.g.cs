@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Mine.Views.Game.GamePage.xaml", "Views/Game/GamePage.xaml", typeof(global::Mine.Views.GamePage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("PrimeAssault.Views.Game.GamePage.xaml", "Views/Game/GamePage.xaml", typeof(global::PrimeAssault.Views.GamePage))]
 
-namespace Mine.Views {
+namespace PrimeAssault.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\Game\\GamePage.xaml")]

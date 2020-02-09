@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>93F72E240402EA6A8039D4EB07C0D7EBB942235FE55C44E45F95355461A2CA0E</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>A4340747CE4E849A48616024C667DBBA3F9104E38A5C899E8B65A6EC975EC75B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>c4addf70-3a00-4a23-87a8-817786570573_1.0.0.0_x86__2nm028ex10k4y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>c4addf70-3a00-4a23-87a8-817786570573_2nm028ex10k4y!App</RegisteredUserModeAppID>
     <RegisteredPackageID>c4addf70-3a00-4a23-87a8-817786570573</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2020-02-09T05:21:43.939</Modified>
+      <Modified>2020-02-09T05:28:16.357</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\Mine.UWP.exe">
       <PackagePath>entrypoint\Mine.UWP.exe</PackagePath>
-      <Modified>2020-02-09T05:21:42.197</Modified>
+      <Modified>2020-02-09T05:28:15.168</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -66,9 +66,9 @@
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
       <Modified>2019-12-10T08:29:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine\bin\Debug\netstandard2.0\Mine.dll">
-      <PackagePath>Mine.dll</PackagePath>
-      <Modified>2020-02-09T05:21:34.949</Modified>
+    <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine\bin\Debug\netstandard2.0\PrimeAssault.dll">
+      <PackagePath>PrimeAssault.dll</PackagePath>
+      <Modified>2020-02-09T05:28:08.933</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
@@ -259,19 +259,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\Mine.UWP.xr.xml">
       <PackagePath>Mine.UWP.xr.xml</PackagePath>
-      <Modified>2020-02-09T05:18:48.958</Modified>
+      <Modified>2020-02-09T05:28:14.980</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\Microsoft.UI.Xaml\DensityStyles\Compact.xbf">
       <PackagePath>Microsoft.UI.Xaml\DensityStyles\Compact.xbf</PackagePath>
-      <Modified>2020-02-09T05:21:42.033</Modified>
+      <Modified>2020-02-09T05:28:14.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2020-02-09T05:21:42.034</Modified>
+      <Modified>2020-02-09T05:28:14.999</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2020-02-09T05:21:42.034</Modified>
+      <Modified>2020-02-09T05:28:15.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.18362.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -287,11 +287,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2020-02-09T05:21:42.920</Modified>
+      <Modified>2020-02-09T05:28:15.607</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine.UWP\bin\x86\Debug\Core\Mine.UWP.exe">
       <PackagePath>Mine.UWP.exe</PackagePath>
-      <Modified>2020-02-09T05:21:43.915</Modified>
+      <Modified>2020-02-09T05:28:16.336</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
