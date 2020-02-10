@@ -30,7 +30,7 @@ namespace PrimeAssault.Models
             experienceTotal += experience;
             return true;
         }
-        ItemModel RemoveItem(string location)  //Remove Item from location
+        ItemModel RemoveItem(string location)  //Remove Item from location by setting old location to null. Returns the old item.
         {
             int index = translateLocationNameToArrayLocation(location);
             ItemModel RemovedItem = EquippedArray[index];
@@ -40,7 +40,9 @@ namespace PrimeAssault.Models
         ItemModel GetItemByLocation(string location) //Get Item info from Location
         {
 
-            return EquippedArray[0];
+            int index = translateLocationNameToArrayLocation(location);
+            ItemModel ExamineItem = EquippedArray[index];
+            return ExamineItem;
         }
         void AddItem(string location, ItemModel item)  //Add item to location
         {
