@@ -73,7 +73,7 @@ namespace PrimeAssault.Models
 
         string FormatOutput() //Text output of the class, a fancy toString()
         {
-            return "";
+            return ("Name:" + Name + "/nDescription: " + Description);
         }
         bool ScaleLevel(int level) //Scale the character to the new level
         {
