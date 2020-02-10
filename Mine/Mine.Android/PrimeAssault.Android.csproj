@@ -112,5 +112,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\TempProfile.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\neonStairs.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

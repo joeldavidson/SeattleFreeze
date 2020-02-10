@@ -162,4 +162,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\TempProfile.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\neonStairs.png" />
+  </ItemGroup>
 </Project>
