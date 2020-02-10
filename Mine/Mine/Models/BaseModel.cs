@@ -11,9 +11,9 @@ namespace PrimeAssault.Models
         public string Id { get; set; } = Guid.NewGuid().ToString();
 
         // Name 
-        public string Name { get; set; } = "This is an Item";
+        public string Name { get; set; } = "Unnamed";
 
         // Description
-        public string Description { get; set; } = "Item Description";
+        public string Description { get; set; } = "Description";
     }
 }
