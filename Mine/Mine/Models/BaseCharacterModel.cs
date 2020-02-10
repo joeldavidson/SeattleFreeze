@@ -19,6 +19,7 @@ namespace PrimeAssault.Models
 
         int level;
         int health;
+        int maxHealth;
         int speed;
         int defense;
         int rangedDefense;
@@ -36,16 +37,26 @@ namespace PrimeAssault.Models
         {
             level = 1;
             health = 10;//
+            maxHealth = 10;
             speed = 1;
-            defense = 1;
             rangedDefense = 0;
             defense = 0;
+
+            healthMult = 1;
+            speedMult = 1;
+            defenseMult = 1;
+            rangedDefenseMult = 1;
+
+            dead = false;
+            ability = null;
+
+            imageURI = null;
 
             for (int i = 0; i < NUM_MOVES; ++i)
                 moveSet[i] = null;
             
         }
-        void CharacterUpdate() //Update this with each attribute passed in
+        void CharacterUpdate(int inHealth, int inTotalHealth, int inSpeed, int inRangedDefense, int inDefense) //Update this with each attribute passed in
         {
 
         }
