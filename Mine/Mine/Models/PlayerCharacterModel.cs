@@ -27,7 +27,6 @@ namespace PrimeAssault.Models
             experienceTotal = 0; // will have to flesh out more if character is created at higher level. Might want constructor which takes int for level
             for (int i = 0; i < NUM_SLOTS; ++i)
                 EquippedArray[i] = null;
-
         }
         
         bool AddExperience(uint experience) // Add experience to current character
@@ -58,7 +57,7 @@ namespace PrimeAssault.Models
             }
             return false;
         }
-        int GetItemBonus()  //Get all the bonuses for the attributes
+        int GetItemBonus()  //Get all the bonuses for the attributes (should be incorporated after items)
         {
             return 2;
         }
