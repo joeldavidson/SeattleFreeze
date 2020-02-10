@@ -6,7 +6,7 @@ namespace PrimeAssault.Models
 {
     class PlayerCharacterModel : BaseCharacterModel
     {
-        int experienceTotal;
+        uint experienceTotal;
         ItemModel Head;
         ItemModel Arms;
         ItemModel RightHand;
@@ -22,8 +22,9 @@ namespace PrimeAssault.Models
             experienceTotal = 0; // will have to flesh out more if character is created at higher level. Might want constructor which takes int for level
         }
         
-        bool AddExperience(int experience) // Add experience to current character
+        bool AddExperience(uint experience) // Add experience to current character
         {
+            experienceTotal += experience;
             return true;
         }
         ItemModel RemoveItem(string location)  //Remove Item from location
