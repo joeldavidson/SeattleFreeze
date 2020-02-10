@@ -7,6 +7,7 @@
     {
         Items,
         Game,
-        About
+        About,
+        Character
     }
 }

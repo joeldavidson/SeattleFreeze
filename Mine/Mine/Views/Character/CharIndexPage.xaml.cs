@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace PrimeAssault.Views.Character
+namespace PrimeAssault.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Page1 : ContentPage
+    public partial class CharIndexPage : ContentPage
     {
-        public Page1()
+        public CharIndexPage()
         {
             InitializeComponent();
         }
