@@ -17,25 +17,25 @@ namespace PrimeAssault.Models
 
         move[] moveSet = new move[NUM_MOVES]; //--- Each character will have an array of 2 moves from which they can use attacks in battle.
 
-        int level;
-        int health;
-        int maxHealth;
-        int speed;
-        int defense;
-        int rangedDefense;
-        int attack;
+        protected int level;
+        protected int health;
+        protected int maxHealth;
+        protected int speed;
+        protected int defense;
+        protected int rangedDefense;
+        protected int attack;
 
-        double healthMult;
-        double speedMult;
-        double defenseMult;
-        double rangedDefenseMult;
-        double attackMult;
+        protected double healthMult;
+        protected double speedMult;
+        protected double defenseMult;
+        protected double rangedDefenseMult;
+        protected double attackMult;
 
-        bool dead;
-        string imageURI;
-        string ability;
+        protected bool dead;
+        protected string imageURI;
+        protected string ability;
         
-        BaseCharacterModel() // default constructor which populates with the bare minimum stats any character can have
+        protected BaseCharacterModel() // default constructor which populates with the bare minimum stats any character can have
         {
             level = 1;
             health = 10;
@@ -60,6 +60,7 @@ namespace PrimeAssault.Models
                 moveSet[i] = null;
             
         }
+        
         void CharacterUpdate(int inHealth, int inTotalHealth, int inSpeed, int inRangedDefense, int inDefense, int inAttack) //Update this with each attribute passed in
         {
             health = inHealth;
@@ -87,9 +88,20 @@ namespace PrimeAssault.Models
             return 0;
         }
             
-        bool TakeDamage(int attackVal) //Character receives damage
+        bool TakeDamage(int damVal) //Character receives damage
         {
-            return true;
+            if (health == 0)
+                return false;
+            else
+            {
+                health -= damVal;
+                if (health <=0)
+                {
+                    health = 0;
+                    dead = true;
+                }
+                return true;
+            }
         }
 
         int GetAttack()   //Return the calculated attack
