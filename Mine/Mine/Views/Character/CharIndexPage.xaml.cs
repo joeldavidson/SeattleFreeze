@@ -47,7 +47,7 @@ namespace PrimeAssault.Views
             //await Navigation.PushAsync(new ItemReadPage(new ItemViewModel(Char)));
 
             // Manually deselect item.
-            ItemsListView.SelectedItem = null;
+            CharListView.SelectedItem = null;
         }
 
         /// <summary>
