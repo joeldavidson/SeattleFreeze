@@ -6,6 +6,8 @@ namespace PrimeAssault.Models
 {
     class PlayerCharacterModel : BaseCharacterModel
     {
+
+        const int NUM_SLOTS = 7;
         uint experienceTotal;
         
         /*
@@ -18,11 +20,12 @@ namespace PrimeAssault.Models
         ItemModel Feet;
         */
 
-        ItemModel[] EquippedArray = new ItemModel[7]; //this array will (for the sake of convenience, contain all the equipment in the order presented above (Head[0], Arms[1], RightHand[2], RightFinger[3], LeftHand[4], LeftFinger[5], Feet[6])
+        ItemModel[] EquippedArray = new ItemModel[NUM_SLOTS]; //this array will (for the sake of convenience, contain all the equipment in the order presented above (Head[0], Arms[1], RightHand[2], RightFinger[3], LeftHand[4], LeftFinger[5], Feet[6])
 
         PlayerCharacterModel()
         {
             experienceTotal = 0; // will have to flesh out more if character is created at higher level. Might want constructor which takes int for level
+            
         }
         
         bool AddExperience(uint experience) // Add experience to current character
@@ -46,7 +49,8 @@ namespace PrimeAssault.Models
         }
         void AddItem(string location, ItemModel item)  //Add item to location
         {
-            
+            int index = translateLocationNameToArrayLocation(location);
+            EquippedArray[index] = item;
         }
         int GetItemBonus(string attribute)  //Get all the bonuses for the attribute
         {
