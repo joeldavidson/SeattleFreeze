@@ -1940,11 +1940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.Android\\PrimeAssault.Android.csproj",
+      "projectUniqueName": "C:\\Users\\joeld\\source\\repos\\SeattleFreeze\\Mine\\Mine.Android\\PrimeAssault.Android.csproj",
       "projectName": "PrimeAssault.Android",
-      "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.Android\\PrimeAssault.Android.csproj",
+      "projectPath": "C:\\Users\\joeld\\source\\repos\\SeattleFreeze\\Mine\\Mine.Android\\PrimeAssault.Android.csproj",
       "packagesPath": "C:\\Users\\joeld\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.Android\\obj\\",
+      "outputPath": "C:\\Users\\joeld\\source\\repos\\SeattleFreeze\\Mine\\Mine.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1965,8 +1965,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj": {
-              "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj"
+            "C:\\Users\\joeld\\source\\repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj": {
+              "projectPath": "C:\\Users\\joeld\\source\\repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj"
             }
           }
         }

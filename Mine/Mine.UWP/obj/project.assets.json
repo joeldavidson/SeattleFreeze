@@ -9376,11 +9376,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.UWP\\PrimeAssault.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\joeld\\source\\repos\\SeattleFreeze\\Mine\\Mine.UWP\\PrimeAssault.UWP.csproj",
       "projectName": "PrimeAssault.UWP",
-      "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.UWP\\PrimeAssault.UWP.csproj",
+      "projectPath": "C:\\Users\\joeld\\source\\repos\\SeattleFreeze\\Mine\\Mine.UWP\\PrimeAssault.UWP.csproj",
       "packagesPath": "C:\\Users\\joeld\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine.UWP\\obj\\",
+      "outputPath": "C:\\Users\\joeld\\source\\repos\\SeattleFreeze\\Mine\\Mine.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -9402,8 +9402,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj": {
-              "projectPath": "C:\\Users\\joeld\\Source\\Repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj"
+            "C:\\Users\\joeld\\source\\repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj": {
+              "projectPath": "C:\\Users\\joeld\\source\\repos\\SeattleFreeze\\Mine\\Mine\\PrimeAssault.csproj"
             }
           }
         }

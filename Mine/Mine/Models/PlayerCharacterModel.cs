@@ -25,7 +25,9 @@ namespace PrimeAssault.Models
         PlayerCharacterModel()
         {
             experienceTotal = 0; // will have to flesh out more if character is created at higher level. Might want constructor which takes int for level
-            
+            for (int i = 0; i < NUM_SLOTS; ++i)
+                EquippedArray[i] = null;
+
         }
         
         bool AddExperience(uint experience) // Add experience to current character
@@ -42,7 +44,6 @@ namespace PrimeAssault.Models
         }
         ItemModel GetItemByLocation(string location) //Get Item info from Location
         {
-
             int index = translateLocationNameToArrayLocation(location);
             ItemModel ExamineItem = EquippedArray[index];
             return ExamineItem;
@@ -52,7 +53,7 @@ namespace PrimeAssault.Models
             int index = translateLocationNameToArrayLocation(location);
             EquippedArray[index] = item;
         }
-        int GetItemBonus(string attribute)  //Get all the bonuses for the attribute
+        int GetItemBonus()  //Get all the bonuses for the attributes
         {
             return 2;
         }
