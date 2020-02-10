@@ -48,10 +48,15 @@ namespace PrimeAssault.Models
             ItemModel ExamineItem = EquippedArray[index];
             return ExamineItem;
         }
-        void AddItem(string location, ItemModel item)  //Add item to location
+        bool AddItem(string location, ItemModel item)  //Add item to location
         {
-            int index = translateLocationNameToArrayLocation(location);
-            EquippedArray[index] = item;
+            if (GetItemByLocation(location) == null)
+            {
+                int index = translateLocationNameToArrayLocation(location);
+                EquippedArray[index] = item;
+                return true;
+            }
+            return false;
         }
         int GetItemBonus()  //Get all the bonuses for the attributes
         {
