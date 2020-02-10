@@ -7,6 +7,8 @@ namespace PrimeAssault.Models
     class PlayerCharacterModel : BaseCharacterModel
     {
         uint experienceTotal;
+        
+        /*
         ItemModel Head;
         ItemModel Arms;
         ItemModel RightHand;
@@ -14,6 +16,7 @@ namespace PrimeAssault.Models
         ItemModel LeftHand;
         ItemModel LeftFinger;
         ItemModel Feet;
+        */
 
         ItemModel[] EquippedArray = new ItemModel[7]; //this array will (for the sake of convenience, contain all the equipment in the order presented above (Head[0], Arms[1], RightHand[2], RightFinger[3], LeftHand[4], LeftFinger[5], Feet[6])
 
@@ -29,13 +32,15 @@ namespace PrimeAssault.Models
         }
         ItemModel RemoveItem(string location)  //Remove Item from location
         {
-            ItemModel removedItem = Head;
-            Head = null;
-            return removedItem;
+            int index = translateLocationNameToArrayLocation(location);
+            ItemModel RemovedItem = EquippedArray[index];
+            EquippedArray[index] = null;
+            return RemovedItem;
         }
         ItemModel GetItemByLocation(string location) //Get Item info from Location
         {
-            return Head;
+
+            return EquippedArray[0];
         }
         void AddItem(string location, ItemModel item)  //Add item to location
         {
@@ -46,7 +51,7 @@ namespace PrimeAssault.Models
             return 2;
         }
 
-        int translateItemNameToArrayLocation(string location) //Helper function which maps equip locations to array indices
+        int translateLocationNameToArrayLocation(string location) //Helper function which maps equip locations to array indices
         {
             location = location.ToLower();
             if (location == "head")
