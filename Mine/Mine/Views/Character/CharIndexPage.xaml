@@ -7,16 +7,179 @@
              x:Class="PrimeAssault.Views.CharIndexPage"
              Title="{Binding Title}"
              x:Name="BrowseCharacterPage">
-    
+
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" IconImageSource="icon_add.png"/>
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+
+            <Label Text="Characer List Page"/>
+
+            <ListView x:Name="ItemsListView" 
+                    ItemsSource="{Binding Dataset}"
+                    IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                    RefreshCommand="{Binding LoadItemsCommand}"
+                    CachingStrategy="RecycleElement"
+                    ItemSelected="OnCharSelected"
+                      BackgroundColor="Cornsilk">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid VerticalOptions="FillAndExpand" Margin="5" BackgroundColor="CornflowerBlue">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!--Column 1 inside Row 1-->
+                                <BoxView Color="MidnightBlue"
+                                             Grid.Column="0"
+                                             Grid.Row="0"                    
+                                             Grid.RowSpan="2"/>
+
+                                <ImageButton Source="TempProfile.png"
+                                                 HorizontalOptions="FillAndExpand"
+                                                 VerticalOptions="FillAndExpand"
+                                                 Grid.Column="0"
+                                                 Grid.Row="0"
+                                                 Grid.RowSpan="2">
+                                </ImageButton>
+                                <Button Text="CLASS"
+                                            HorizontalOptions="FillAndExpand"
+                                            VerticalOptions="FillAndExpand"
+                                            Grid.Column="0"
+                                            Grid.Row="2"
+                                            ></Button>
+                                <Button Text="Heath"
+                                            HorizontalOptions="FillAndExpand"
+                                            VerticalOptions="FillAndExpand"
+                                            Grid.Column="0"
+                                            Grid.Row="3"
+                                            ></Button>
+                                <!--End of Column 1-->
+
+                                <!--Column 2 inside Row 1-->
+                                <Button Text="ATK"
+                                            HorizontalOptions="FillAndExpand"
+                                            VerticalOptions="FillAndExpand"
+                                            Grid.Column="1"
+                                            Grid.Row="0"
+                                            ></Button>
+                                <Button Text="DEF"
+                                            HorizontalOptions="FillAndExpand"
+                                            VerticalOptions="FillAndExpand"
+                                            Grid.Column="1"
+                                            Grid.Row="1"
+                                            ></Button>
+                                <Button Text="RNG"
+                                            HorizontalOptions="FillAndExpand"
+                                            VerticalOptions="FillAndExpand"
+                                            Grid.Column="1"
+                                            Grid.Row="2"
+                                            ></Button>
+                                <Button Text="SPD"
+                                            HorizontalOptions="FillAndExpand"
+                                            VerticalOptions="FillAndExpand"
+                                            Grid.Column="1"
+                                            Grid.Row="3"
+                                            ></Button>
+                                <!--End of Column 2-->
+
+                                <!--Column 3 inside Row 1-->
+                                <Label Text="1"
+                                            FontSize="Medium"
+                                            Grid.Column="2"
+                                            Grid.Row="0"/>
+                                <Label Text="1"
+                                            FontSize="Medium"
+                                            Grid.Column="2"
+                                            Grid.Row="1"/>
+                                <Label Text="1"
+                                            FontSize="Medium"
+                                            Grid.Column="2"
+                                            Grid.Row="2"/>
+                                <Label Text="1"
+                                            FontSize="Medium"
+                                            Grid.Column="2"
+                                            Grid.Row="3"/>
+                                <!--End of Column 3-->
+
+                                <!--Column 4 inside Row 1-->
+                                <Button Text="Torso"
+                                        HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="FillAndExpand"
+                                        Grid.Column="4"
+                                        Grid.Row="0"
+                                        Grid.RowSpan="4" 
+                                        ></Button>
+                                <!--End of Column 4-->
+
+                                <!--Column 5 inside Row 1-->
+                                <Button Text="Head"
+                                        HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="FillAndExpand"
+                                        Grid.Column="5"
+                                        Grid.Row="0"
+                                        Grid.RowSpan="2" 
+                                        ></Button>
+                                <Button Text="Boots"
+                                        HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="FillAndExpand"
+                                        Grid.Column="5"
+                                        Grid.Row="2"
+                                        Grid.RowSpan="2" 
+                                        ></Button>
+                                <!--End of Column 5-->
+
+                                <!--Column 6 inside Row 1-->
+                                <Button Text="R-Hand"
+                                        HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="FillAndExpand"
+                                        Grid.Column="6"
+                                        Grid.Row="0"
+                                        Grid.RowSpan="2" 
+                                        ></Button>
+                                <Button Text="Ring 1"
+                                        HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="FillAndExpand"
+                                        Grid.Column="6"
+                                        Grid.Row="2"
+                                        Grid.RowSpan="2" 
+                                        ></Button>
+                                <!--End of Column 6-->
+
+                                <!--Column 7 inside Row 1-->
+                                <Button Text="L-Hand"
+                                        HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="FillAndExpand"
+                                        Grid.Column="7"
+                                        Grid.Row="0"
+                                        Grid.RowSpan="2" 
+                                        ></Button>
+                                <Button Text="Ring 2"
+                                        HorizontalOptions="FillAndExpand"
+                                        VerticalOptions="FillAndExpand"
+                                        Grid.Column="7"
+                                        Grid.Row="2"
+                                        Grid.RowSpan="2" 
+                                        ></Button>
+                                <!--End of Column 7-->
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
