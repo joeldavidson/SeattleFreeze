@@ -6,7 +6,19 @@ namespace PrimeAssault.Models
 {
     class BaseCharacterModel : BaseModel
     {
-     
+        int NUM_MOVES = 2;
+        struct move //we will eventually need to create another CRUDi for this
+        {
+            string type; //as in ranged or close or heal
+            string name; 
+            uint power;
+            uint uses; // number of allowed uses per dungeon sequence
+        }
+
+        move[] moveSet = new move[2]; //--- Each character will have an array of 2 moves from which they can use attacks in battle.
+
+
+        int level;
         int health;
         int speed;
         int defense;
@@ -18,10 +30,10 @@ namespace PrimeAssault.Models
         double rangedDefenseMult;
 
         bool dead;
-        String ImageURI;
-        int Level;
-        String Ability;
-        //Move[2] moveSet; --- Each character will have an array of 2 moves from which they can use attacks in battle. However, these moves structs must be designed and implemented.
+        string imageURI;
+        string ability;
+        
+       
 
 
         /*Required Methods
