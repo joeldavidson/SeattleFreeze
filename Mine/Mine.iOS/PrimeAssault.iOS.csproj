@@ -156,4 +156,10 @@
   <ItemGroup>
     <BundleResource Include="Resources\icon_cancel.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TempLockedCharacter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TempProfile.png" />
+  </ItemGroup>
 </Project>
