@@ -79,10 +79,7 @@ namespace PrimeAssault.Models
         {
             return true;
         }
-        bool LevelUp() //Levels up the character if they are ready
-        {
-            return true;
-        }
+       
         int levelUpToValue(int value) //Force leveling up to a level, say start a new character at level 5
         {
             return 0;

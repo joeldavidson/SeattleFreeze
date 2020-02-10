@@ -62,6 +62,11 @@ namespace PrimeAssault.Models
             return 2;
         }
 
+        bool LevelUp() //Levels up the character if they are ready
+        {
+            return true;
+        }
+
         int translateLocationNameToArrayLocation(string location) //Helper function which maps equip locations to array indices
         {
             location = location.ToLower();
