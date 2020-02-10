@@ -43,5 +43,26 @@ namespace PrimeAssault.Models
         {
             return 2;
         }
+
+        int translateItemNameToArrayLocation(string location) //Helper function which maps equip locations to array indices
+        {
+            location = location.ToLower();
+            if (location == "head")
+                return 0;
+            else if (location == "arms")
+                return 1;
+            else if (location == "righthand")
+                return 2;
+            else if (location == "rightfinger")
+                return 3;
+            else if (location == "lefthand")
+                return 4;
+            else if (location == "leftfinger")
+                return 5;
+            else if (location == "feet")
+                return 6;
+            else
+                return -1;
+        }
     }
 }
