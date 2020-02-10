@@ -68,7 +68,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\joeld\Source\Repos\SeattleFreeze\Mine\Mine\bin\Debug\netstandard2.0\PrimeAssault.dll">
       <PackagePath>PrimeAssault.dll</PackagePath>
-      <Modified>2020-02-10T00:34:13.711</Modified>
+      <Modified>2020-02-10T00:42:48.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Microsoft\Xamarin\NuGet\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>

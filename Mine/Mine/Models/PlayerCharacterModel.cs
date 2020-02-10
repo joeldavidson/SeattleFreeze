@@ -29,7 +29,9 @@ namespace PrimeAssault.Models
         }
         ItemModel RemoveItem(string location)  //Remove Item from location
         {
-            return Head;
+            ItemModel removedItem = Head;
+            Head = null;
+            return removedItem;
         }
         ItemModel GetItemByLocation(string location) //Get Item info from Location
         {
