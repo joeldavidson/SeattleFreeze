@@ -38,7 +38,7 @@ namespace PrimeAssault.Models
         BaseCharacterModel() // default constructor which populates with the bare minimum stats any character can have
         {
             level = 1;
-            health = 10;//
+            health = 10;
             maxHealth = 10;
             speed = 1;
             attack = 1;
@@ -62,7 +62,12 @@ namespace PrimeAssault.Models
         }
         void CharacterUpdate(int inHealth, int inTotalHealth, int inSpeed, int inRangedDefense, int inDefense, int inAttack) //Update this with each attribute passed in
         {
-
+            health = inHealth;
+            maxHealth = inTotalHealth;
+            speed = inSpeed;
+            rangedDefense = inRangedDefense;
+            defense = inDefense;
+            attack = inAttack;
         }
 
         string FormatOutput() //Text output of the class, a fancy toString()
