@@ -7,6 +7,13 @@ namespace PrimeAssault.Models
     class PlayerCharacterModel : BaseCharacterModel
     {
         const int NUM_SLOTS = 7;
+
+        //current level up equation
+        //(BASE_XP + (LVL_MULT * level) ^ LVL_EXP) = (100 + (5 * level) ^ 2)
+        const int BASE_XP = 100;
+        const int LVL_MULT = 5;
+        const int LVL_EXP = 2;
+
         uint experienceTotal;
         uint nextLevel;
         double nextLevelMultiplier;
@@ -87,7 +94,7 @@ namespace PrimeAssault.Models
             {
                 ++level;
                 increaseStats();
-                nextLevel += (uint)((100 + (5 * level) ^ 2) * nextLevelMultiplier);
+                nextLevel += (uint)((BASE_XP + (LVL_MULT * level) ^ LVL_EXP) * nextLevelMultiplier);
                 return true;
             }
             return false;
@@ -148,6 +155,7 @@ namespace PrimeAssault.Models
                 Description = "The hunter has high Attack, and Speed and its bonuses usually lend to killing sewer creatures from afar.";
                 jobClass = "Hunter";
                 nextLevelMultiplier = 1.0;
+                imageURI = "hunter_class.png";
                 return true;
             }
             if (name == "brawler")

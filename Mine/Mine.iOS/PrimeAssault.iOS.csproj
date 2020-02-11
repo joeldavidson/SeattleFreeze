@@ -165,4 +165,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\neonStairs.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\hunter_class.png" />
+  </ItemGroup>
 </Project>
