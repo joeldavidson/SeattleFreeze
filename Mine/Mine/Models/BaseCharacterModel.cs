@@ -60,16 +60,6 @@ namespace PrimeAssault.Models
                 moveSet[i] = null;
             
         }
-        
-        void CharacterUpdate(int inHealth, int inTotalHealth, int inSpeed, int inRangedDefense, int inDefense, int inAttack) //Update this with each attribute passed in
-        {
-            health = inHealth;
-            maxHealth = inTotalHealth;
-            speed = inSpeed;
-            rangedDefense = inRangedDefense;
-            defense = inDefense;
-            attack = inAttack;
-        }
 
         string FormatOutput() //Text output of the class, a fancy toString()
         {

@@ -50,7 +50,8 @@ namespace PrimeAssault.Models
             for (int i = 0; i < NUM_SLOTS; ++i)
                 EquippedArray[i] = null;
 
-            setClass(DEFAULT_CLASS);
+            jobClass = DEFAULT_CLASS;
+            updateClass();
         }
         
         bool AddExperience(uint experience) // Add experience to current character
@@ -133,6 +134,20 @@ namespace PrimeAssault.Models
                 return -1;
         }
 
+        void CharacterUpdate(PlayerCharacterModel data)
+        {
+            health = data.health;
+            maxHealth = data.maxHealth;
+            speed = data.speed;
+            rangedDefense = data.rangedDefense;
+            defense = data.defense;
+            attack = data.attack;
+            Description = data.Description;
+            Name = data.Name;
+            jobClass = data.jobClass.ToLower();
+            updateClass();
+        }
+
         void levelMultipliers()
         {
             healthMult = 1;
@@ -142,10 +157,9 @@ namespace PrimeAssault.Models
             attackMult = 1;
         }
 
-        bool setClass(string name)//ugly awful class, not maintanable, needs work. So sorry to everyone, just trying to get class up on its feet. Hardcode galore.
+        bool updateClass()//ugly awful class, not maintanable, needs work. So sorry to everyone, just trying to get class up on its feet. Hardcode galore.
         {
-            name = name.ToLower();
-            if (name == "soldier")
+            if (jobClass == "soldier")
             {
                 levelMultipliers();
                 healthMult += .2;
@@ -159,7 +173,7 @@ namespace PrimeAssault.Models
                 imageURI = "soldier_class.png";
                 return true;
             }
-            if (name == "hunter")
+            if (jobClass == "hunter")
             {
                 levelMultipliers();
                 healthMult += -.3;
@@ -173,7 +187,7 @@ namespace PrimeAssault.Models
                 imageURI = "hunter_class.png";
                 return true;
             }
-            if (name == "brawler")
+            if (jobClass == "brawler")
             {
                 levelMultipliers();
                 healthMult += .5;
@@ -187,7 +201,7 @@ namespace PrimeAssault.Models
                 imageURI = "brawler_class.png";
                 return true;
             }
-            if (name == "mechanic")
+            if (jobClass == "mechanic")
             {
                 levelMultipliers();
                 healthMult += -.2;
@@ -201,7 +215,7 @@ namespace PrimeAssault.Models
                 imageURI = "mechanic_class.png";
                 return true;
             }
-            if (name == "mechanist")
+            if (jobClass == "mechanist")
             {
                 levelMultipliers();
                 healthMult += 0;
@@ -215,7 +229,7 @@ namespace PrimeAssault.Models
                 imageURI = "mechanist_class.png";
                 return true;
             }
-            if (name == "ringleader")
+            if (jobClass == "ringleader")
             {
                 levelMultipliers();
                 healthMult += -.1;
