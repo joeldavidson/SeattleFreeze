@@ -16,6 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\Character\CharDeletePage.xaml.cs">
+      <DependentUpon>CharDeletePage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Character\CharIndexPage.xaml.cs">
       <DependentUpon>CharIndexPage.xaml</DependentUpon>
     </Compile>
@@ -37,6 +40,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\Character\CharCreatePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Character\CharIndexPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
