@@ -9,6 +9,7 @@ namespace PrimeAssault.Models
         const int NUM_SLOTS = 7;
         uint experienceTotal;
         uint nextLevel;
+        double nextLevelMultiplier;
         string jobClass;
         
         /*
@@ -22,7 +23,7 @@ namespace PrimeAssault.Models
         */
         ItemModel[] EquippedArray = new ItemModel[NUM_SLOTS]; //this array will (for the sake of convenience, contain all the equipment in the order presented above (Head[0], Arms[1], RightHand[2], RightFinger[3], LeftHand[4], LeftFinger[5], Feet[6])
 
-        enum jobList 
+        enum jobList //might use in the future, keeping as reminder
         {
             Soldier,
             Hunter,
@@ -37,7 +38,9 @@ namespace PrimeAssault.Models
             experienceTotal = 0; // will have to flesh out more if character is created at higher level. Might want constructor which takes int for level
             for (int i = 0; i < NUM_SLOTS; ++i)
                 EquippedArray[i] = null;
+
             jobClass = null;
+            nextLevelMultiplier = 1.0;
         }
         
         bool AddExperience(uint experience) // Add experience to current character
@@ -97,6 +100,78 @@ namespace PrimeAssault.Models
                 return 6;
             else
                 return -1;
+        }
+
+        bool setClass(string name)//ugly awful class, not maintanable, needs work. So sorry to everyone, just trying to get class up on its feet.
+        {
+            name = name.ToLower();
+            if (name == "soldier")
+            {
+                healthMult += .2;
+                speedMult += -.1;
+                defenseMult += .3;
+                rangedDefenseMult += -.3;
+                attackMult += .2;
+                Description = "Soldiers have high health, and defense, and are more likely to get abilities that help with close-range combat.";
+                jobClass = "Soldier";
+                nextLevelMultiplier = 1.0;
+            }
+            else if (name == "hunter")
+            {
+                healthMult += -.3;
+                speedMult += .3;
+                defenseMult += 0;
+                rangedDefenseMult += .15;
+                attackMult += .15;
+                Description = "The hunter has high Attack, and Speed and its bonuses usually lend to killing sewer creatures from afar.";
+                jobClass = "Hunter";
+                nextLevelMultiplier = 1.0;
+            }
+            else if (name == "brawler")
+            {
+                healthMult += .5;
+                speedMult += -.5;
+                defenseMult += .15;
+                rangedDefenseMult += .15;
+                attackMult += .05;
+                Description = "The brawler is a beef-cake with high overall survivability, but no amazing offensive power.";
+                jobClass = "Brawler";
+                nextLevelMultiplier = 1.1;
+            }
+            else if (name == "mechanic")
+            {
+                healthMult += -.2;
+                speedMult += .4;
+                defenseMult += -.2;
+                rangedDefenseMult += .2;
+                attackMult += -.25;
+                Description = "Mechanic has low overall stats, but all mechanic abilities allow for healing of teammates.";
+                jobClass = "Mechanic";
+                nextLevelMultiplier = 1.2;
+            }
+            else if (name == "mechanist")
+            {
+                healthMult += 0;
+                speedMult += 0;
+                defenseMult += .1;
+                rangedDefenseMult += .1;
+                attackMult += .1;
+                Description = "The mechanist has high ranged defense and attack, and its bonuses are good for killing Euphrates mechs.";
+                jobClass = "Mechanist";
+                nextLevelMultiplier = 1.1;
+            }
+            else if (name == "ringleader")
+            {
+                healthMult += -.1;
+                speedMult += -.1;
+                defenseMult += -.1;
+                rangedDefenseMult += -.1;
+                attackMult += -.1;
+                Description = "A ringleader has low base stats, but compensates for this through its ability to channel 10 rings to great possible effect.";
+                jobClass = "Ringleader";
+                nextLevelMultiplier = 1.3;
+            }
+            return false;
         }
     }
 }
