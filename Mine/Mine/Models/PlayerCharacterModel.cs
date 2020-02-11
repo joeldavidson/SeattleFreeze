@@ -39,7 +39,7 @@ namespace PrimeAssault.Models
             for (int i = 0; i < NUM_SLOTS; ++i)
                 EquippedArray[i] = null;
 
-            jobClass = null;
+            jobClass = "None";
             nextLevelMultiplier = 1.0;
         }
         
@@ -102,7 +102,7 @@ namespace PrimeAssault.Models
                 return -1;
         }
 
-        bool setClass(string name)//ugly awful class, not maintanable, needs work. So sorry to everyone, just trying to get class up on its feet.
+        bool setClass(string name)//ugly awful class, not maintanable, needs work. So sorry to everyone, just trying to get class up on its feet. Hardcode galore.
         {
             name = name.ToLower();
             if (name == "soldier")
@@ -115,8 +115,9 @@ namespace PrimeAssault.Models
                 Description = "Soldiers have high health, and defense, and are more likely to get abilities that help with close-range combat.";
                 jobClass = "Soldier";
                 nextLevelMultiplier = 1.0;
+                return true;
             }
-            else if (name == "hunter")
+            if (name == "hunter")
             {
                 healthMult += -.3;
                 speedMult += .3;
@@ -126,8 +127,9 @@ namespace PrimeAssault.Models
                 Description = "The hunter has high Attack, and Speed and its bonuses usually lend to killing sewer creatures from afar.";
                 jobClass = "Hunter";
                 nextLevelMultiplier = 1.0;
+                return true;
             }
-            else if (name == "brawler")
+            if (name == "brawler")
             {
                 healthMult += .5;
                 speedMult += -.5;
@@ -137,8 +139,9 @@ namespace PrimeAssault.Models
                 Description = "The brawler is a beef-cake with high overall survivability, but no amazing offensive power.";
                 jobClass = "Brawler";
                 nextLevelMultiplier = 1.1;
+                return true;
             }
-            else if (name == "mechanic")
+            if (name == "mechanic")
             {
                 healthMult += -.2;
                 speedMult += .4;
@@ -148,8 +151,9 @@ namespace PrimeAssault.Models
                 Description = "Mechanic has low overall stats, but all mechanic abilities allow for healing of teammates.";
                 jobClass = "Mechanic";
                 nextLevelMultiplier = 1.2;
+                return true;
             }
-            else if (name == "mechanist")
+            if (name == "mechanist")
             {
                 healthMult += 0;
                 speedMult += 0;
@@ -159,8 +163,9 @@ namespace PrimeAssault.Models
                 Description = "The mechanist has high ranged defense and attack, and its bonuses are good for killing Euphrates mechs.";
                 jobClass = "Mechanist";
                 nextLevelMultiplier = 1.1;
+                return true;
             }
-            else if (name == "ringleader")
+            if (name == "ringleader")
             {
                 healthMult += -.1;
                 speedMult += -.1;
@@ -170,6 +175,7 @@ namespace PrimeAssault.Models
                 Description = "A ringleader has low base stats, but compensates for this through its ability to channel 10 rings to great possible effect.";
                 jobClass = "Ringleader";
                 nextLevelMultiplier = 1.3;
+                return true;
             }
             return false;
         }
