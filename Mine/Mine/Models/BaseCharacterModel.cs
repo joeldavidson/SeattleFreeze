@@ -17,25 +17,25 @@ namespace PrimeAssault.Models
 
         move[] moveSet = new move[NUM_MOVES]; //--- Each character will have an array of 2 moves from which they can use attacks in battle.
 
-        protected int level;
-        protected int health;
-        protected int maxHealth;
-        protected int speed;
-        protected int defense;
-        protected int rangedDefense;
-        protected int attack;
+        public int level;
+        public int health;
+        public int maxHealth;
+        public int speed;
+        public int defense;
+        public int rangedDefense;
+        public int attack;
 
-        protected double healthMult;
-        protected double speedMult;
-        protected double defenseMult;
-        protected double rangedDefenseMult;
-        protected double attackMult;
+        public double healthMult;
+        public double speedMult;
+        public double defenseMult;
+        public double rangedDefenseMult;
+        public double attackMult;
 
-        protected bool dead;
-        protected string imageURI;
-        protected string ability;
+        public bool dead;
+        public string imageURI;
+        public string ability;
         
-        protected BaseCharacterModel() // default constructor which populates with the bare minimum stats any character can have
+        public BaseCharacterModel() // default constructor which populates with the bare minimum stats any character can have
         {
             level = 1;
             health = 10;

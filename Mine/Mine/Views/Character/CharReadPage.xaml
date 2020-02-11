@@ -5,11 +5,26 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PrimeAssault.Views.Character.CharReadPage">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Update" Clicked="Update_Clicked" IconImageSource="icon_edit.png"/>
+        <ToolbarItem Text="Delete" Clicked="Delete_Clicked" IconImageSource="icon_delete.png"/>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        
+        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+            <Image Source="{Binding Data.imageURI}"></Image>
+            <Label Text="{Binding Data.Name}" FontSize="Header" FontAttributes="Bold"></Label>
+
+
+            <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label Text="{Binding Data.jobClass}" FontSize="Small"></Label>
+                <Label Text="{Binding Data.health}" FontSize="Small"></Label>
+
+            </StackLayout>
+                
+        </StackLayout>         
+            
     </ContentPage.Content>
 </ContentPage>
