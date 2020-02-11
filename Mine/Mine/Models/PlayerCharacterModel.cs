@@ -41,6 +41,7 @@ namespace PrimeAssault.Models
 
             jobClass = "None";
             nextLevelMultiplier = 1.0;
+            nextLevel = 100;
         }
         
         bool AddExperience(uint experience) // Add experience to current character
@@ -48,6 +49,7 @@ namespace PrimeAssault.Models
             experienceTotal += experience;
             return true;
         }
+
         ItemModel RemoveItem(string location)  //Remove Item from location by setting old location to null. Returns the old item.
         {
             int index = translateLocationNameToArrayLocation(location);
@@ -55,12 +57,14 @@ namespace PrimeAssault.Models
             EquippedArray[index] = null;
             return RemovedItem;
         }
+
         ItemModel GetItemByLocation(string location) //Get Item info from Location
         {
             int index = translateLocationNameToArrayLocation(location);
             ItemModel ExamineItem = EquippedArray[index];
             return ExamineItem;
         }
+
         bool AddItem(string location, ItemModel item)  //Add item to location
         {
             if (GetItemByLocation(location) == null)
@@ -71,14 +75,31 @@ namespace PrimeAssault.Models
             }
             return false;
         }
+
         int GetItemBonus()  //Get all the bonuses for the attributes (should be incorporated after items)
         {
-            return 2;
+            return 0;
         }
 
         bool LevelUp() //Levels up the character if they are ready
         {
-            return true;
+            if (experienceTotal >= (nextLevel))
+            {
+                ++level;
+                increaseStats();
+                nextLevel += (uint)((100 + (5 * level) ^ 2) * nextLevelMultiplier);
+                return true;
+            }
+            return false;
+        }
+
+        void increaseStats()
+        {
+            health += 5;
+            defense += 2;
+            rangedDefense += 2;
+            speed += 2;
+            attack += 2;
         }
 
         int translateLocationNameToArrayLocation(string location) //Helper function which maps equip locations to array indices
