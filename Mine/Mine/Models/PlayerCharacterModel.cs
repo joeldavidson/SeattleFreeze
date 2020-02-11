@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PrimeAssault.Models
 {
-    class PlayerCharacterModel : BaseCharacterModel
+    public class PlayerCharacterModel : BaseCharacterModel
     {
         const int NUM_SLOTS = 7;
 
@@ -32,7 +32,7 @@ namespace PrimeAssault.Models
         */
         ItemModel[] EquippedArray = new ItemModel[NUM_SLOTS]; //this array will (for the sake of convenience, contain all the equipment in the order presented above (Head[0], Arms[1], RightHand[2], RightFinger[3], LeftHand[4], LeftFinger[5], Feet[6])
 
-        enum jobList //might use in the future, keeping as reminder
+        enum jobList //might use in the future to make more tenable code that looks more like Dr. Koenig's, keeping as reminder
         {
             Soldier,
             Hunter,

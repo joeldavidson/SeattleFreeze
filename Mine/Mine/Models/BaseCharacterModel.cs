@@ -4,10 +4,10 @@ using System.Text;
 
 namespace PrimeAssault.Models
 {
-    class BaseCharacterModel : BaseModel
+    public class BaseCharacterModel : BaseModel
     {
         const int NUM_MOVES = 2;
-        class move //we will eventually need to create another CRUDi for this
+        class move //we will eventually need to create another class for this
         {
             string type; //as in ranged or close or heal
             string name; 
@@ -63,7 +63,7 @@ namespace PrimeAssault.Models
 
         string FormatOutput() //Text output of the class, a fancy toString()
         {
-            return ("Name:" + Name + "/nDescription: " + Description);
+            return ("Name: " + Name + "/nDescription: " + Description);
         }
         bool ScaleLevel(int level) //Scale the character to the new level
         {
