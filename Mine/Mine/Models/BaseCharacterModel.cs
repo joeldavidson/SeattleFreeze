@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PrimeAssault.Models
 {
-    class BaseCharacterModel : BaseModel
+    public class BaseCharacterModel : BaseModel
     {
         const int NUM_MOVES = 2;
         class move //we will eventually need to create another class for this

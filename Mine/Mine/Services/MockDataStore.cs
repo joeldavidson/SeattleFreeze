@@ -12,6 +12,7 @@ namespace PrimeAssault.Services
         /// This is where the items are stored
         /// </summary>
         public List<ItemModel> datalist;
+        public List<PlayerCharacterModel> datalist2;
 
         /// <summary>
         /// Constructor for the Storee
@@ -35,7 +36,12 @@ namespace PrimeAssault.Services
                 new ItemModel { Name = "'Why Me' Baseball Bat", Description="To swing pointlessly at tree stumps come valentine's day." },
                 new ItemModel { Name = "Xus Evol", Description="An ancient alien brought this sword to Earth and quickly departed without it when he couldn't get a date to 'War of the Worlds' in theaters.", Value= 2 },
                 new ItemModel { Name = "Rapid Rejection", Description="Capable of defeating the hopes of scores of men in mere seconds, this is truly a rifle to be feared.", Value = 10 }
-                };
+            };
+
+            datalist2 = new List<PlayerCharacterModel>()
+            {
+                new PlayerCharacterModel {Name = "Harvey II", Description = "He's a lean mean killing machine!"}
+            };
 
             return true;
         }
