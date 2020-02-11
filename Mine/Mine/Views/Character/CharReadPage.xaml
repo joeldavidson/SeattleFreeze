@@ -21,9 +21,24 @@
             <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
                 <Label Text="{Binding Data.jobClass}" FontSize="Small"></Label>
                 <Label Text="{Binding Data.health}" FontSize="Small"></Label>
-
             </StackLayout>
-                
+
+            <Label Text="{Binding Data.Description}" FontSize="Body"></Label>
+
+            <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label Text="Ability: " FontSize="Small"></Label>
+                <Label Text="{Binding Data.ability}" FontSize="Small"></Label>
+            </StackLayout>
+
+            <Frame BackgroundColor="##803f035f" 
+                   HasShadow="False" 
+                   CornerRadius="0"
+                   Padding="10"
+                   Margin="3"
+                   >
+                <Button Text="Move1"></Button>
+            </Frame>
+                     
         </StackLayout>         
             
     </ContentPage.Content>
