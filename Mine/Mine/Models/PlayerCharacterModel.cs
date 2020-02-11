@@ -14,6 +14,8 @@ namespace PrimeAssault.Models
         const int LVL_MULT = 5;
         const int LVL_EXP = 2;
 
+        const string DEFAULT_CLASS = "soldier";
+
         uint experienceTotal;
         uint nextLevel;
         double nextLevelMultiplier;
@@ -43,17 +45,18 @@ namespace PrimeAssault.Models
         public PlayerCharacterModel()
         {
             experienceTotal = 0; // will have to flesh out more if character is created at higher level. Might want constructor which takes int for level
+            nextLevel = 100;
+            
             for (int i = 0; i < NUM_SLOTS; ++i)
                 EquippedArray[i] = null;
 
-            jobClass = "None";
-            nextLevelMultiplier = 1.0;
-            nextLevel = 100;
+            setClass(DEFAULT_CLASS);
         }
         
         bool AddExperience(uint experience) // Add experience to current character
         {
             experienceTotal += experience;
+            LevelUp();
             return true;
         }
 
@@ -100,7 +103,7 @@ namespace PrimeAssault.Models
             return false;
         }
 
-        void increaseStats()
+        void increaseStats() //Basic level up stat increases, temporary
         {
             health += 5;
             defense += 2;
@@ -130,11 +133,21 @@ namespace PrimeAssault.Models
                 return -1;
         }
 
+        void levelMultipliers()
+        {
+            healthMult = 1;
+            speedMult = 1;
+            defenseMult = 1;
+            rangedDefenseMult = 1;
+            attackMult = 1;
+        }
+
         bool setClass(string name)//ugly awful class, not maintanable, needs work. So sorry to everyone, just trying to get class up on its feet. Hardcode galore.
         {
             name = name.ToLower();
             if (name == "soldier")
             {
+                levelMultipliers();
                 healthMult += .2;
                 speedMult += -.1;
                 defenseMult += .3;
@@ -147,6 +160,7 @@ namespace PrimeAssault.Models
             }
             if (name == "hunter")
             {
+                levelMultipliers();
                 healthMult += -.3;
                 speedMult += .3;
                 defenseMult += 0;
@@ -160,6 +174,7 @@ namespace PrimeAssault.Models
             }
             if (name == "brawler")
             {
+                levelMultipliers();
                 healthMult += .5;
                 speedMult += -.5;
                 defenseMult += .15;
@@ -172,6 +187,7 @@ namespace PrimeAssault.Models
             }
             if (name == "mechanic")
             {
+                levelMultipliers();
                 healthMult += -.2;
                 speedMult += .4;
                 defenseMult += -.2;
@@ -184,6 +200,7 @@ namespace PrimeAssault.Models
             }
             if (name == "mechanist")
             {
+                levelMultipliers();
                 healthMult += 0;
                 speedMult += 0;
                 defenseMult += .1;
@@ -196,6 +213,7 @@ namespace PrimeAssault.Models
             }
             if (name == "ringleader")
             {
+                levelMultipliers();
                 healthMult += -.1;
                 speedMult += -.1;
                 defenseMult += -.1;
