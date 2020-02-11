@@ -57,7 +57,8 @@ namespace PrimeAssault.Views
         /// <param name="e"></param>
         async void AddChar_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new ItemCreatePage(new ItemViewModel())));
+
+            await Navigation.PushModalAsync(new NavigationPage(new CharCreatePage()));
         }
 
         /// <summary>

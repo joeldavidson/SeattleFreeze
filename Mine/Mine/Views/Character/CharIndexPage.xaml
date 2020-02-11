@@ -10,7 +10,9 @@
                      BackgroundImageSource="neonStairs.png">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" IconImageSource="icon_add.png"/>
+     
+        <ToolbarItem Text="Add" Clicked="AddChar_Clicked" IconImageSource="icon_add.png"/>
+
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>

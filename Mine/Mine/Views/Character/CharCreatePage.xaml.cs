@@ -3,18 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PrimeAssault.Models;
+using PrimeAssault.ViewModels;
+using System.ComponentModel;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace PrimeAssault.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CharCreatePage : ContentPage
+    [DesignTimeVisible(false)]
+
+    public partial class CharCreatePage : ContentPage
 	{
-		public CharCreatePage ()
+
+        // The item to create
+        PlayerCharacterViewModel ViewModel { get; set; }
+
+        public CharCreatePage ()
 		{
 			InitializeComponent ();
-		}
+
+
+        }
 	}
 }
