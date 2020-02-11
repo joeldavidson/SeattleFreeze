@@ -16,7 +16,7 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Label Text="Characer List Page" TextColor="DeepPink" FontSize="Header" BackgroundColor="Transparent"/>
+            <Label Text="Character List Page" TextColor="DeepPink" FontSize="Header" BackgroundColor="Transparent"/>
 
             <RelativeLayout>
                 <ListView x:Name="CharListView" 
