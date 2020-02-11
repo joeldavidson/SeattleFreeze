@@ -168,4 +168,19 @@
   <ItemGroup>
     <BundleResource Include="Resources\hunter_class.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\brawler_class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mechanic_class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mechanist_class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ringleader_class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\soldier_class.png" />
+  </ItemGroup>
 </Project>

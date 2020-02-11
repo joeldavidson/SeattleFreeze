@@ -103,7 +103,7 @@ namespace PrimeAssault.Models
             return false;
         }
 
-        void increaseStats() //Basic level up stat increases, temporary
+        void increaseStats() //Basic level up stat increases, temporary, will eventually change when classes are better hammered out
         {
             health += 5;
             defense += 2;
@@ -156,6 +156,7 @@ namespace PrimeAssault.Models
                 Description = "Soldiers have high health, and defense, and are more likely to get abilities that help with close-range combat.";
                 jobClass = "Soldier";
                 nextLevelMultiplier = 1.0;
+                imageURI = "soldier_class.png";
                 return true;
             }
             if (name == "hunter")
@@ -183,6 +184,7 @@ namespace PrimeAssault.Models
                 Description = "The brawler is a beef-cake with high overall survivability, but no amazing offensive power.";
                 jobClass = "Brawler";
                 nextLevelMultiplier = 1.1;
+                imageURI = "brawler_class.png";
                 return true;
             }
             if (name == "mechanic")
@@ -196,6 +198,7 @@ namespace PrimeAssault.Models
                 Description = "Mechanic has low overall stats, but all mechanic abilities allow for healing of teammates.";
                 jobClass = "Mechanic";
                 nextLevelMultiplier = 1.2;
+                imageURI = "mechanic_class.png";
                 return true;
             }
             if (name == "mechanist")
@@ -209,6 +212,7 @@ namespace PrimeAssault.Models
                 Description = "The mechanist has high ranged defense and attack, and its bonuses are good for killing Euphrates mechs.";
                 jobClass = "Mechanist";
                 nextLevelMultiplier = 1.1;
+                imageURI = "mechanist_class.png";
                 return true;
             }
             if (name == "ringleader")
@@ -222,6 +226,7 @@ namespace PrimeAssault.Models
                 Description = "A ringleader has low base stats, but compensates for this through its ability to channel 10 rings to great possible effect.";
                 jobClass = "Ringleader";
                 nextLevelMultiplier = 1.3;
+                imageURI = "ringleader_class.png";
                 return true;
             }
             return false;
