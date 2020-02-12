@@ -16,11 +16,10 @@ namespace PrimeAssault.Models
 
         const string DEFAULT_CLASS = "soldier";
 
-        uint experienceTotal;
-        uint nextLevel;
-        double nextLevelMultiplier;
-        public string bio { get; set; } = "";
-        string jobClass;
+        public uint experienceTotal { get; set; } = 0;
+        public uint nextLevel { get; set; } = 0;
+        public double nextLevelMultiplier { get; set; } = 0;
+        public string jobClass { get; set; } = DEFAULT_CLASS;
         
         /*
         ItemModel Head;
@@ -37,7 +36,6 @@ namespace PrimeAssault.Models
         public bool Update(PlayerCharacterModel data)
         {
             Name = data.Name;
-            bio = data.bio;
             Description = data.Description;
             jobClass = data.jobClass;
             level = data.level;
@@ -71,7 +69,6 @@ namespace PrimeAssault.Models
 
         public PlayerCharacterModel() : base()
         {
-            experienceTotal = 0; // will have to flesh out more if character is created at higher level. Might want constructor which takes int for level
             nextLevel = 100;
             
             for (int i = 0; i < NUM_SLOTS; ++i)

@@ -10,15 +10,51 @@
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        
-        <StackLayout Padding="40,20,40,20">
+
+        <StackLayout 
+            
+            Padding="40,20,40,20">
             <Label TextColor="Aqua" HorizontalOptions="Center" FontSize="Header">ANDROID LAB</Label>
             <Image Source="TempProfile.png"></Image>
 
             <Entry  Text ="{Binding Data.Name}"  Placeholder="Name" FontSize="Small" />
-            <Editor Text ="{Binding Data.bio}"  Placeholder="Give your character a backstory" FontSize="Small" Margin="0" AutoSize="TextChanges" />
-            
+            <Picker x:Name="picker"
+            Title="Class"
+            TitleColor="Aqua">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Soldier</x:String>
+                            <x:String>Hunter</x:String>
+                            <x:String>Brawler</x:String>
+                            <x:String>Mechnanist</x:String>
+                            <x:String>Mechanic</x:String>
+                            <x:String>Ringleader</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            <Grid>
+                
+                <!--<Grid.RowDefinitions>
+                    <RowDefinition Height="20"/>
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="50"/>
+                </Grid.ColumnDefinitions>-->
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="LVL" Grid.Row="0" Grid.Column="0"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="ATK" Grid.Row="0" Grid.Column="1"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="DEF" Grid.Row="0" Grid.Column="2"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="RDF" Grid.Row="0" Grid.Column="3"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="SPD" Grid.Row="0" Grid.Column="4"/>
+
+                <Entry  Text ="{Binding Data.level}"  Placeholder="1" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="0"/>
+                <Entry  Text ="{Binding Data.attack}"  Placeholder="10" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                <Entry  Text ="{Binding Data.defense}"  Placeholder="10" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="2"/>
+                <Entry  Text ="{Binding Data.rangedDefense}"  Placeholder="10" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="3"/>
+                <Entry  Text ="{Binding Data.speed}" Placeholder="10" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="4"/>
+
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
-
 </ContentPage>
