@@ -17,7 +17,7 @@ namespace PrimeAssault.Views
     public partial class CharIndexPage : ContentPage
     {
         // The view model, used for data binding
-        ItemIndexViewModel viewModel;
+        CharIndexViewModel viewModel;
 
         /// <summary>
         /// Constructor for Index Page
@@ -28,7 +28,7 @@ namespace PrimeAssault.Views
         {
             InitializeComponent();
 
-            BindingContext = viewModel = new ItemIndexViewModel();
+            BindingContext = viewModel = new CharIndexViewModel();
         }
         /// <summary>
         /// The row selected from the list
