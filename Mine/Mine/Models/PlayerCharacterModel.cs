@@ -19,6 +19,7 @@ namespace PrimeAssault.Models
         uint experienceTotal;
         uint nextLevel;
         double nextLevelMultiplier;
+        public string bio { get; set; } = "";
         string jobClass;
         
         /*
@@ -36,6 +37,7 @@ namespace PrimeAssault.Models
         public bool Update(PlayerCharacterModel data)
         {
             Name = data.Name;
+            bio = data.bio;
             Description = data.Description;
             jobClass = data.jobClass;
             level = data.level;
