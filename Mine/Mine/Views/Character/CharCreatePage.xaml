@@ -10,15 +10,27 @@
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-        
+
         <StackLayout Padding="40,20,40,20">
             <Label TextColor="Aqua" HorizontalOptions="Center" FontSize="Header">ANDROID LAB</Label>
             <Image Source="TempProfile.png"></Image>
 
             <Entry  Text ="{Binding Data.Name}"  Placeholder="Name" FontSize="Small" />
-            <Editor Text ="{Binding Data.bio}"  Placeholder="Give your character a backstory" FontSize="Small" Margin="0" AutoSize="TextChanges" />
-            
+
+            <Picker x:Name="picker"
+            Title="Class"
+            TitleColor="Aqua">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Soldier</x:String>
+                        <x:String>Hunter</x:String>
+                        <x:String>Brawler</x:String>
+                        <x:String>Mechnanist</x:String>
+                        <x:String>Mechanic</x:String>
+                        <x:String>Ringleader</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
         </StackLayout>
     </ContentPage.Content>
-
 </ContentPage>
