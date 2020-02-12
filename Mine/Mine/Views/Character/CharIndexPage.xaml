@@ -62,7 +62,7 @@
                                                 CornerRadius="20"
                                                 BorderColor="Aqua"
                                                     ></Button>
-                                    <Button Text="{Binding health} / {Binding maxHealth}" TextColor="Aqua"
+                                    <Button Text="{Binding maxHealth}" TextColor="Aqua"
                                                     Grid.Column="0"
                                                     Grid.Row="3"
                                                 CornerRadius="10"
