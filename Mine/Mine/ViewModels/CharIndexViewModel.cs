@@ -37,17 +37,17 @@ namespace PrimeAssault.ViewModels
             LoadDatasetCommand = new Command(async () => await ExecuteLoadDataCommand());
 
             // Register the Create Message
-            MessagingCenter.Subscribe<ItemCreatePage, PlayerCharacterModel>(this, "Create", async (obj, data) =>
+            MessagingCenter.Subscribe<CharCreatePage, PlayerCharacterModel>(this, "Create", async (obj, data) =>
             {
                 await Add(data as PlayerCharacterModel);
             });
 
-            MessagingCenter.Subscribe<ItemDeletePage, PlayerCharacterModel>(this, "Delete", async (obj, data) =>
+            MessagingCenter.Subscribe<CharDeletePage, PlayerCharacterModel>(this, "Delete", async (obj, data) =>
             {
                 await Delete(data as PlayerCharacterModel);
             });
 
-            MessagingCenter.Subscribe<ItemUpdatePage, PlayerCharacterModel>(this, "Update", async (obj, data) =>
+            MessagingCenter.Subscribe<CharUpdatePage, PlayerCharacterModel>(this, "Update", async (obj, data) =>
             {
                 await Update(data as PlayerCharacterModel);
             });
