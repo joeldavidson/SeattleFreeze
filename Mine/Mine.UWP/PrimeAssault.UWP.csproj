@@ -146,6 +146,7 @@
     <Content Include="soldier_class.png" />
     <Content Include="TempLockedCharacter.png" />
     <Content Include="TempProfile.png" />
+    <Content Include="Workshop.png" />
     <Content Include="xamarin_logo.png" />
     <Content Include="add.png" />
     <Content Include="save.png" />

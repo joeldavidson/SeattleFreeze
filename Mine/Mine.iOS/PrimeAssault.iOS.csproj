@@ -183,4 +183,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\soldier_class.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Workshop.png" />
+  </ItemGroup>
 </Project>
