@@ -26,7 +26,7 @@
                             <x:String>Soldier</x:String>
                             <x:String>Hunter</x:String>
                             <x:String>Brawler</x:String>
-                            <x:String>Mechnanist</x:String>
+                            <x:String>Mechanist</x:String>
                             <x:String>Mechanic</x:String>
                             <x:String>Ringleader</x:String>
                         </x:Array>
@@ -34,14 +34,6 @@
                 </Picker>
             <Grid>
                 
-                <!--<Grid.RowDefinitions>
-                    <RowDefinition Height="20"/>
-                    <RowDefinition Height="20"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"/>
-                    <ColumnDefinition Width="50"/>
-                </Grid.ColumnDefinitions>-->
                 <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="LVL" Grid.Row="0" Grid.Column="0"/>
                 <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="ATK" Grid.Row="0" Grid.Column="1"/>
                 <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="DEF" Grid.Row="0" Grid.Column="2"/>
