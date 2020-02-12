@@ -56,4 +56,5 @@ namespace PrimeAssault.Views
         {
             await Navigation.PopModalAsync();
         }
+    }
 }

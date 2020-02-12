@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace PrimeAssault.Views.Character
+namespace PrimeAssault.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CharDeletePage : ContentPage

@@ -11,7 +11,7 @@ using Xamarin.Forms.Xaml;
 using PrimeAssault.Models;
 using PrimeAssault.ViewModels;
 
-namespace PrimeAssault.Views.Character
+namespace PrimeAssault.Views
 {
     [DesignTimeVisible(false)]
     public partial class CharReadPage : ContentPage
