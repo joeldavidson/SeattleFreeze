@@ -33,6 +33,7 @@ namespace PrimeAssault.ViewModels
         public CharIndexViewModel()
         {
             Title = "Characters";
+
             Dataset = new ObservableCollection<PlayerCharacterModel>();
             LoadDatasetCommand = new Command(async () => await ExecuteLoadDataCommand());
 

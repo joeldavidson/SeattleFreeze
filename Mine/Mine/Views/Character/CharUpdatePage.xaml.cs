@@ -53,5 +53,10 @@ namespace PrimeAssault.Views
         {
             await Navigation.PopModalAsync();
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
+        }
     }
 }
