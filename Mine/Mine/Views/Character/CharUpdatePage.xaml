@@ -12,13 +12,13 @@
         <ToolbarItem Text="Save" Clicked="Save_Clicked" IconImageSource="icon_save.png"/>
     </ContentPage.ToolbarItems>
 
-        <Grid Margin="10" BackgroundColor="#4D3f035f">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
+    <Grid Margin="10" BackgroundColor="#4D3f035f">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
@@ -51,7 +51,7 @@
                    Grid.Row="1"/>
             <Label Text="{Binding jobClass}" FontSize="Header"
                    Grid.Row="2" Grid.Column="1"/>
-            <Grid Margin="10" BackgroundColor="#4D3f035f" Grid.Row="2" Grid.Row="0">
+            <Grid Margin="10" BackgroundColor="#4D3f035f" Grid.Column="2" Grid.Row="0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
@@ -252,8 +252,5 @@
                                             BorderColor="Aqua"
                                             ></Button>
         <!--End of Column 7-->
-                </Grid>
-                </ViewCell>
-                </DataTemplate>
-    </ContentPage.Content>
+    </Grid>
 </ContentPage>
