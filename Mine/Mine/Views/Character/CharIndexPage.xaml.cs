@@ -37,7 +37,7 @@ namespace PrimeAssault.Views
         /// <param name="args"></param>
         async void OnCharSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            BaseCharacterModel Char = args.SelectedItem as BaseCharacterModel;
+            PlayerCharacterModel Char = args.SelectedItem as PlayerCharacterModel;
             if (Char == null)
             {
                 return;
@@ -58,7 +58,7 @@ namespace PrimeAssault.Views
         async void AddChar_Clicked(object sender, EventArgs e)
         {
 
-            await Navigation.PushModalAsync(new NavigationPage(new CharCreatePage()));
+            await Navigation.PushModalAsync(new NavigationPage(new CharCreatePage(new PlayerCharacterModel())));
         }
 
         /// <summary>
