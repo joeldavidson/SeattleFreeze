@@ -101,5 +101,73 @@ namespace PrimeAssault.ViewModels
             var result = await DataStore.ReadAsync(id);
             return result;
         }
+
+        #region Refresh
+        // Return True if a refresh is needed
+        // It sets the refresh flag to false
+        public bool NeedsRefresh()
+        {
+            if (_needsRefresh)
+            {
+                _needsRefresh = false;
+                return true;
+            }
+
+            return false;
+        }
+
+        // Sets the need to refresh
+        public void SetNeedsRefresh(bool value)
+        {
+            _needsRefresh = value;
+        }
+
+        // Command that Loads the Data
+        private async Task ExecuteLoadDataCommand()
+        {
+            if (IsBusy)
+            {
+                return;
+            }
+
+            IsBusy = true;
+
+            try
+            {
+                Dataset.Clear();
+                var dataset = await DataStore.IndexAsync(true);
+
+                // Example of how to sort the database output using a linq query.
+                // Sort the list
+                dataset = dataset
+                    .OrderBy(a => a.Name)
+                    .ThenBy(a => a.Description)
+                    .ToList();
+
+                foreach (var data in dataset)
+                {
+                    Dataset.Add(data);
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
+        /// <summary>
+        /// Force data to refresh
+        /// </summary>
+        public void ForceDataRefresh()
+        {
+            // Reset
+            var canExecute = LoadDatasetCommand.CanExecute(null);
+            LoadDatasetCommand.Execute(null);
+        }
+        #endregion Refresh
     }
 }
