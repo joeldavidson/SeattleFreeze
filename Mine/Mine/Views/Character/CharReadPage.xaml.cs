@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -10,30 +11,42 @@ using Xamarin.Forms.Xaml;
 using PrimeAssault.Models;
 using PrimeAssault.ViewModels;
 
-namespace PrimeAssault.Views.Character
+namespace PrimeAssault.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+    [DesignTimeVisible(false)]
     public partial class CharReadPage : ContentPage
     {
 
         PlayerCharacterViewModel viewModel;
-        public CharReadPage()
+
+        /// <summary>
+        /// Constructor called with a view model
+        /// This is the primary way to open the page
+        /// The viewModel is the data that should be displayed
+        /// </summary>
+        /// <param name="viewModel"></param>
+        public CharReadPage(PlayerCharacterViewModel data)
         {
             InitializeComponent();
 
-            BindingContext = viewModel = new PlayerCharacterViewModel();
+            BindingContext = this.viewModel = data;
         }
 
+        /// <summary>
+        /// Save calls to Update
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         async void Update_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushModalAsync(new NavigationPage(new CharUpdatePage(new ItemViewModel(viewModel.Data))));
-            //await Navigation.PopAsync();
+            await Navigation.PushModalAsync(new NavigationPage(new CharUpdatePage(new PlayerCharacterViewModel(viewModel.Data))));
+            await Navigation.PopAsync();
         }
 
         async void Delete_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushModalAsync(new NavigationPage(new CharDeletePage(new PlayerCharacterViewModel(viewModel.Data))));
-            //await Navigation.PopAsync();
+            await Navigation.PushModalAsync(new NavigationPage(new CharDeletePage(new PlayerCharacterViewModel(viewModel.Data))));
+            await Navigation.PopAsync();
         }
     }
 }

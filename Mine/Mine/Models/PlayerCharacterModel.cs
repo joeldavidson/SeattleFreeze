@@ -31,6 +31,31 @@ namespace PrimeAssault.Models
         ItemModel Feet;
         */
         ItemModel[] EquippedArray = new ItemModel[NUM_SLOTS]; //this array will (for the sake of convenience, contain all the equipment in the order presented above (Head[0], Arms[1], RightHand[2], RightFinger[3], LeftHand[4], LeftFinger[5], Feet[6])
+        
+        public int Value { get; set; } = 0;
+        public bool Update(PlayerCharacterModel data)
+        {
+            Name = data.Name;
+            Description = data.Description;
+            jobClass = data.jobClass;
+            level = data.level;
+            health = data.health;
+            maxHealth = data.maxHealth;
+            speed = data.speed;
+            attack = data.attack;
+            rangedDefense = data.rangedDefense;
+            defense = data.defense;
+
+            healthMult = data.healthMult;
+            speedMult = data.speedMult;
+            defenseMult = data.defenseMult;
+            rangedDefenseMult = data.rangedDefense;
+            attackMult = data.attackMult;
+
+            dead = false;
+            ability = null;
+            return true;
+        }
 
         enum jobList //might use in the future to make more tenable code that looks more like Dr. Koenig's, keeping as reminder
         {

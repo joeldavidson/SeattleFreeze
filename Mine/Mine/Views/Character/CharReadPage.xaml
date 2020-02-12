@@ -4,7 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="PrimeAssault.Views.Character.CharReadPage">
+             x:Class="PrimeAssault.Views.CharReadPage">
     
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Update" Clicked="Update_Clicked" IconImageSource="icon_edit.png"/>

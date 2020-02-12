@@ -2,11 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrimeAssault.Views.CharCreatePage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" IconImageSource="icon_save.png"/>
+    </ContentPage.ToolbarItems>
+    
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Name" FontSize="Medium" />
+            <Entry Text ="{Binding Data.Name}"  Placeholder="Name" FontSize="Small" />
+            <Label Text="Character Bio" FontSize="Medium" />
+            <Editor Text ="{Binding Data.Description}" Placeholder="Character Bio" FontSize="Small" Margin="0" AutoSize="TextChanges" />
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
