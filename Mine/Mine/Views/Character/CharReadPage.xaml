@@ -5,8 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PrimeAssault.Views.CharReadPage"
-             Title="Read">
-
+             BackgroundImageSource="Workshop.png">
+    
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Update" Clicked="Update_Clicked" IconImageSource="icon_edit.png"/>
         <ToolbarItem Text="Delete" Clicked="Delete_Clicked" IconImageSource="icon_delete.png"/>
@@ -14,25 +14,30 @@
     
     <ContentPage.Content>
         
-        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            
             <Image Source="{Binding Data.imageURI}"
-                   HeightRequest="500"
-                   WidthRequest="500"
-                   ></Image>
-            <Label Text="{Binding Data.Name}" FontSize="Header" FontAttributes="Bold"></Label>
+                   HeightRequest="250"
+                   WidthRequest="250"
+            ></Image>
 
+            <Label Text="{Binding Data.Name}" FontSize="Header" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="AntiqueWhite"></Label>
 
             <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Label Text="Class:" FontSize="Small"></Label>
-                <Label Text="{Binding Data.jobClass}" FontSize="Small"></Label>
-                <Label Text="{Binding Data.health}" FontSize="Small"></Label>
+                <Label Text="Class: " FontSize="Small" TextColor="AntiqueWhite"></Label>
+                <Label Text="{Binding Data.jobClass}" FontSize="Small" TextColor="AntiqueWhite"></Label>
+                <Label Text="Health: " FontSize="Small" TextColor="AntiqueWhite"></Label>
+                <Label Text="{Binding Data.health}" FontSize="Small" TextColor="AntiqueWhite"></Label>
+                <Label Text="/" TextColor="AntiqueWhite"></Label>
+                <Label Text="{Binding Data.maxHealth}" FontSize="Small" TextColor="AntiqueWhite"></Label>
             </StackLayout>
 
-            <Label Text="{Binding Data.Description}" FontSize="Body"></Label>
+
+            <Label Text="{Binding Data.Description}" FontSize="Body" HorizontalTextAlignment="Center" TextColor="AntiqueWhite"></Label>
 
             <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Label Text="Ability: " FontSize="Small"></Label>
-                <Label Text="{Binding Data.ability}" FontSize="Small"></Label>
+                <Label Text="Ability: " FontSize="Small" TextColor="AntiqueWhite"></Label>
+                <Label Text="{Binding Data.ability}" FontSize="Small" TextColor="AntiqueWhite"></Label>
             </StackLayout>
 
             <Frame BackgroundColor="AliceBlue"  
@@ -55,7 +60,49 @@
                 <Button Text="Move2"></Button>
 
             </Frame>
-                     
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+              
+                <Button x:Name="btn1"
+                                            HorizontalOptions="Center"
+                                            HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                                            Text="ATK" TextColor="Aqua"
+                                            CornerRadius="40"
+                                            BorderColor="Aqua"
+                                                >
+                </Button>
+                <Button x:Name="btn2"
+                                            HeightRequest="{Binding Width, Source={x:Reference btn2}}"
+                                            Text="DEF" TextColor="Aqua"
+                                            CornerRadius="40"
+                                            BorderColor="Aqua"
+                                                ></Button>
+                <Button x:Name="btn3"
+                                            HeightRequest="{Binding Width, Source={x:Reference btn1}}"
+                                            Text="RNG" 
+                                            TextColor="Aqua"
+                                            CornerRadius="40"
+                                            BorderColor="Aqua"
+                                                ></Button>
+                <Button x:Name="btn4"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Center"
+                                            HeightRequest="{Binding Width, Source={x:Reference btn4}}"
+                                            Text="SPD" TextColor="Aqua"
+                                            CornerRadius="40"
+                                            BorderColor="Aqua"
+                                                ></Button>
+                
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label Text="{Binding attack}" TextColor="AntiqueWhite" FontSize="Medium"></Label>
+                <Label Text="{Binding defense}" TextColor="AntiqueWhite" FontSize="Medium"></Label>
+                <Label Text="{Binding rangedDefense}" TextColor="AntiqueWhite" FontSize="Medium"></Label>
+                <Label Text="{Binding speed}" TextColor="AntiqueWhite" FontSize="Medium"></Label>
+
+            </StackLayout>
+
         </StackLayout>         
             
     </ContentPage.Content>
