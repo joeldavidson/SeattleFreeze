@@ -37,8 +37,23 @@ namespace PrimeAssault.Models
         {
             Name = data.Name;
             Description = data.Description;
+            jobClass = data.jobClass;
+            level = data.level;
+            health = data.health;
+            maxHealth = data.maxHealth;
+            speed = data.speed;
+            attack = data.attack;
+            rangedDefense = data.rangedDefense;
+            defense = data.defense;
 
-            Value = data.Value;
+            healthMult = data.healthMult;
+            speedMult = data.speedMult;
+            defenseMult = data.defenseMult;
+            rangedDefenseMult = data.rangedDefense;
+            attackMult = data.attackMult;
+
+            dead = false;
+            ability = null;
             return true;
         }
 
