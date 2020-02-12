@@ -44,7 +44,7 @@ namespace PrimeAssault.Views
             }
 
             // Open the Read Page
-            //await Navigation.PushAsync(new ItemReadPage(new ItemViewModel(Char)));
+            await Navigation.PushAsync(new CharReadPage(new PlayerCharacterViewModel(Char)));
 
             // Manually deselect item.
             CharListView.SelectedItem = null;

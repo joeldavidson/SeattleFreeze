@@ -5,7 +5,7 @@ using PrimeAssault.Models;
 
 namespace PrimeAssault.ViewModels
 {
-    class PlayerCharacterViewModel : BaseViewModel
+    public class PlayerCharacterViewModel : BaseViewModel
     {
         public PlayerCharacterModel Data { get; set; }
 
