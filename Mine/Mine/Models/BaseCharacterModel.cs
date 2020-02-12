@@ -17,48 +17,28 @@ namespace PrimeAssault.Models
 
         move[] moveSet = new move[NUM_MOVES]; //--- Each character will have an array of 2 moves from which they can use attacks in battle.
 
-        public int level;
-        public int health;
-        public int maxHealth;
-        public int speed;
-        public int defense;
-        public int rangedDefense;
-        public int attack;
+        public int level { get; set; } = 1;
+        public int health { get; set; } = 10;
+        public int maxHealth { get; set; } = 10;
+        public int speed { get; set; } = 2;
+        public int defense { get; set; } = 2;
+        public int rangedDefense { get; set; } = 2;
+        public int attack { get; set; } = 2;
 
-        public double healthMult;
-        public double speedMult;
-        public double defenseMult;
-        public double rangedDefenseMult;
-        public double attackMult;
+        public double healthMult { get; set; } = 1.0;
+        public double speedMult { get; set; }= 1.0;
+        public double defenseMult { get; set; } = 1.0;
+        public double rangedDefenseMult { get; set; } = 1.0;
+        public double attackMult { get; set; } = 1.0;
 
-        public bool dead;
-        public string imageURI;
-        public string ability;
+        public bool dead { get; set; } = false;
+        public string imageURI { get; set; } = "TempProfile.png";
+        public string ability { get; set; } = "None";
         
         public BaseCharacterModel() // default constructor which populates with the bare minimum stats any character can have
         {
-            level = 1;
-            health = 10;
-            maxHealth = 10;
-            speed = 1;
-            attack = 1;
-            rangedDefense = 0;
-            defense = 0;
-
-            healthMult = 1;
-            speedMult = 1;
-            defenseMult = 1;
-            rangedDefenseMult = 1;
-            attackMult = 1;
-
-            dead = false;
-            ability = null;
-
-            imageURI = null;
-
             for (int i = 0; i < NUM_MOVES; ++i)
                 moveSet[i] = null;
-            
         }
 
         string FormatOutput() //Text output of the class, a fancy toString()
