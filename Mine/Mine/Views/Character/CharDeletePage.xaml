@@ -5,11 +5,25 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PrimeAssault.Views.CharDeletePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png"/>
+        <ToolbarItem Text="Delete" Clicked="Delete_Clicked" IconImageSource="icon_delete.png"/>
+    </ContentPage.ToolbarItems>
+
+
+        <StackLayout
+        HorizontalOptions="Center"
+            Padding="20">
+
+        <Label Text = "Really delete this?" FontSize="Medium"></Label>
+        <Button
+                Text="Yes"
+                Clicked="Delete_Clicked"
+                HorizontalOptions="Center"
+                FontSize="Medium"
+                BorderWidth="1"
+                BorderColor="Black"
+                >
+        </Button>
+    </StackLayout>
 </ContentPage>  
