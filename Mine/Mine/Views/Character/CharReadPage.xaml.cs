@@ -39,7 +39,7 @@ namespace PrimeAssault.Views.Character
         /// <param name="e"></param>
         async void Update_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new CharUpdatePage(new ItemViewModel(viewModel.Data))));
+            await Navigation.PushModalAsync(new NavigationPage(new CharUpdatePage(new PlayerCharacterViewModel(viewModel.Data))));
             await Navigation.PopAsync();
         }
 

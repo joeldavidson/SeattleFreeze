@@ -12,19 +12,48 @@ using Xamarin.Forms.Xaml;
 
 namespace PrimeAssault.Views
 {
+    // Learn more about making custom code visible in the Xamarin.Forms previewer
+    // by visiting https://aka.ms/xamarinforms-previewer
+
+    /// <summary>
+    /// Create Char
+    /// </summary>
     [DesignTimeVisible(false)]
-
     public partial class CharCreatePage : ContentPage
-	{
-
-        // The item to create
+    {
+        // The Char to create
         PlayerCharacterViewModel ViewModel { get; set; }
 
-        public CharCreatePage ()
-		{
-			InitializeComponent ();
+        /// <summary>
+        /// Constructor for Create makes a new model
+        /// </summary>
+        public CharCreatePage(PlayerCharacterViewModel data)
+        {
+            InitializeComponent();
 
+            data.Data = new PlayerCharacterModel();
 
+            BindingContext = this.ViewModel = data;
         }
-	}
+
+        /// <summary>
+        /// Save by calling for Create
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        async void Save_Clicked(object sender, EventArgs e)
+        {
+            MessagingCenter.Send(this, "Create", ViewModel.Data);
+            await Navigation.PopModalAsync();
+        }
+
+        /// <summary>
+        /// Cancel the Create
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        async void Cancel_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
 }
