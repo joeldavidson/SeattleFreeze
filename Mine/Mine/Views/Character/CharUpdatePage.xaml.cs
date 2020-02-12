@@ -29,6 +29,7 @@ namespace PrimeAssault.Views
         /// </summary>
         public CharUpdatePage(PlayerCharacterViewModel data)
         {
+            InitializeComponent();
 
             BindingContext = this.viewModel = data;
         }
