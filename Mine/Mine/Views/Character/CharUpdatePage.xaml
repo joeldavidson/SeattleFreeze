@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns = "http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -8,60 +8,60 @@
              Title="CharUpdate">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png"/>
-        <ToolbarItem Text="Save" Clicked="Save_Clicked" IconImageSource="icon_save.png"/>
+        <ToolbarItem Text = "Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png"/>
+        <ToolbarItem Text = "Save" Clicked="Save_Clicked" IconImageSource="icon_save.png"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <Grid Margin="10" BackgroundColor="MidnightBlue">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-
-        <Grid Margin="10" BackgroundColor="#4D3f035f" Grid.Row ="0">
+        <Grid Margin = "10" BackgroundColor="MidnightBlue">
             <Grid.RowDefinitions>
+                <RowDefinition Height = "Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height = "Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height = "Auto" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
 
-                    <!--Column 1 inside Row 1-->
-            <ImageButton Source="TempProfile.png"
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width = "*" />
+            </Grid.ColumnDefinitions >
+
+            <Grid Margin="10" BackgroundColor="#4D3f035f" Grid.Row ="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height = "Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height = "Auto" />
+                </Grid.RowDefinitions >
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width = "*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!--Column 1 inside Row 1-->
+                <ImageButton Source = "TempProfile.png"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand"
                     Grid.Column="1"
                     Grid.Row="0"
             ></ImageButton>
 
-            <Label Text="{Binding Name}" FontSize="Header"
+                <Label Text = "{Binding Name}" FontSize="Header"
                    Grid.Row="1"/>
-            <Label Text="{Binding jobClass}" FontSize="Header"
+                <Label Text = "{Binding jobClass}" FontSize="Header"
                    Grid.Row="2" Grid.Column="1"/>
-            <Grid Margin="10" BackgroundColor="#4D3f035f" Grid.Column="2" Grid.Row="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Button x:Name="btn1"
+                <Grid Margin = "10" BackgroundColor="#4D3f035f" Grid.Column="2" Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height = "Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height = "Auto" />
+                    </Grid.RowDefinitions >
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width = "*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btn1"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 HeightRequest="{Binding Width, Source={x:Reference btn1}}"
@@ -71,9 +71,9 @@
                 CornerRadius="40"
                 BorderColor="Aqua"
                 ></Button>
-                <Label Text="/" FontSize="Header"
+                    <Label Text = "/" FontSize="Header"
                    Grid.Row="2" Grid.Column="1"/>
-                <Button x:Name="btn2"
+                    <Button x:Name="btn2"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 HeightRequest="{Binding Width, Source={x:Reference btn1}}"
@@ -83,53 +83,53 @@
                 CornerRadius="40"
                 BorderColor="Aqua"
                 ></Button>
+                </Grid>
             </Grid>
-        </Grid>
-        <Button Text="{Binding Name}" TextColor="Aqua"
+            <Button Text = "{Binding Name}" TextColor="Aqua"
                 Grid.Column="0"
                 Grid.Row="2"
                 CornerRadius="20"
                 BorderColor="Aqua"
                 ></Button>
-        <Button Text="{Binding health} / {Binding maxHealth}" TextColor="Aqua"
+            <Button Text = "{Binding health} / {Binding maxHealth}" TextColor="Aqua"
                 Grid.Column="0"
                 Grid.Row="3"
                 CornerRadius="10"
                 BorderColor="Aqua"
                 ></Button>
-        <!--End of Column 1-->
+            <!--End of Column 1-->
 
-        <!--Column 2 inside Row 1-->
+            <!--Column 2 inside Row 1-->
 
-        <!--Column 3 inside Row 1-->
-        <Label Text="{Binding attack}"
+            <!--Column 3 inside Row 1-->
+            <Label Text = "{Binding attack}"
                 TextColor="Aqua"
                     FontSize="Medium"
                     Grid.Column="2"
                     Grid.Row="0"
                 VerticalOptions="Center"/>
-        <Label Text="{Binding defense}"
+            <Label Text = "{Binding defense}"
                 TextColor="Aqua"
                     FontSize="Medium"
                     Grid.Column="2"
                     Grid.Row="1"
                 VerticalOptions="Center"/>
-        <Label Text="{Binding rangedDefense}"
+            <Label Text = "{Binding rangedDefense}"
                                             TextColor="Aqua"
                                                 FontSize="Medium"
                                                 Grid.Column="2"
                                                 Grid.Row="2"
                                             VerticalOptions="Center"/>
-        <Label Text="{Binding speed}"
+            <Label Text = "{Binding speed}"
                                             TextColor="Aqua"
                                                 FontSize="Medium"
                                                 Grid.Column="2"
                                                 Grid.Row="3"
                                             VerticalOptions="Center"/>
-        <!--End of Column 3-->
+            <!--End of Column 3-->
 
-        <!--Column 4 inside Row 1-->
-        <Button Text="Torso" TextColor="Aqua"
+            <!--Column 4 inside Row 1-->
+            <Button Text = "Torso" TextColor="Aqua"
                                             HorizontalOptions="FillAndExpand"
                                             VerticalOptions="FillAndExpand"
                                             Grid.Column="4"
@@ -139,10 +139,10 @@
                                             CornerRadius="10"
                                             BorderColor="Aqua"
                                             ></Button>
-        <!--End of Column 4-->
+            <!--End of Column 4-->
 
-        <!--Column 5 inside Row 1-->
-        <Button Text="Head" TextColor="Aqua"
+            <!--Column 5 inside Row 1-->
+            <Button Text = "Head" TextColor="Aqua"
                                             HorizontalOptions="FillAndExpand"
                                             VerticalOptions="FillAndExpand"
                                             Grid.Column="5"
@@ -152,7 +152,7 @@
                                             CornerRadius="20"
                                             BorderColor="Aqua"
                                             ></Button>
-        <Button Text="Boots" TextColor="Aqua"
+            <Button Text = "Boots" TextColor="Aqua"
                                             HorizontalOptions="FillAndExpand"
                                             VerticalOptions="FillAndExpand"
                                             Grid.Column="5"
@@ -162,10 +162,10 @@
                                             CornerRadius="20"
                                             BorderColor="Aqua"
                                             ></Button>
-        <!--End of Column 5-->
+            <!--End of Column 5-->
 
-        <!--Column 6 inside Row 1-->
-        <Button Text="R-Hand" TextColor="Aqua"
+            <!--Column 6 inside Row 1-->
+            <Button Text = "R-Hand" TextColor="Aqua"
                                             HorizontalOptions="FillAndExpand"
                                             VerticalOptions="FillAndExpand"
                                             Grid.Column="6"
@@ -175,7 +175,7 @@
                                             CornerRadius="20"
                                             BorderColor="Aqua"
                                             ></Button>
-        <Button Text="Ring 1" TextColor="Aqua"
+            <Button Text = "Ring 1" TextColor="Aqua"
                                             HorizontalOptions="FillAndExpand"
                                             VerticalOptions="FillAndExpand"
                                             Grid.Column="6"
@@ -185,10 +185,10 @@
                                             CornerRadius="40"
                                             BorderColor="Aqua"
                                             ></Button>
-        <!--End of Column 6-->
+            <!--End of Column 6-->
 
-        <!--Column 7 inside Row 1-->
-        <Button Text="L-Hand" TextColor="Aqua"
+            <!--Column 7 inside Row 1-->
+            <Button Text = "L-Hand" TextColor="Aqua"
                                             HorizontalOptions="FillAndExpand"
                                             VerticalOptions="FillAndExpand"
                                             Grid.Column="7"
@@ -198,7 +198,7 @@
                                             CornerRadius="20"
                                             BorderColor="Aqua"
                                             ></Button>
-        <Button Text="Ring 2" TextColor="Aqua"
+            <Button Text = "Ring 2" TextColor="Aqua"
                                             HorizontalOptions="FillAndExpand"
                                             VerticalOptions="FillAndExpand"
                                             Grid.Column="7"
@@ -208,7 +208,7 @@
                                             CornerRadius="40"
                                             BorderColor="Aqua"
                                             ></Button>
-        <!--End of Column 7-->
-    </Grid>
+            <!--End of Column 7-->
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
