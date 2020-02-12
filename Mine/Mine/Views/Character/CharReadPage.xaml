@@ -44,6 +44,7 @@
                    HasShadow="True"
                    CornerRadius="0"
                    Padding="10"
+                   HorizontalOptions="Center"
                    IsVisible="True"  
                    Margin="3"
                    >
@@ -51,6 +52,7 @@
 
             </Frame>
             <Frame BackgroundColor= "AliceBlue" 
+                   HorizontalOptions="Center"
                    HasShadow="True"
                    CornerRadius="0"
                    Padding="10"
@@ -60,29 +62,36 @@
                 <Button Text="Move2"></Button>
 
             </Frame>
+            <Grid>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-              
                 <Button x:Name="btn1"
+                        VerticalOptions="Center"
                                             HorizontalOptions="Center"
                                             HeightRequest="{Binding Width, Source={x:Reference btn1}}"
                                             Text="ATK" TextColor="Aqua"
                                             CornerRadius="40"
                                             BorderColor="Aqua"
+                         Grid.Row="0" Grid.Column="0"
                                                 >
                 </Button>
                 <Button x:Name="btn2"
+                        VerticalOptions="Center"
+                                            HorizontalOptions="Center"
                                             HeightRequest="{Binding Width, Source={x:Reference btn2}}"
                                             Text="DEF" TextColor="Aqua"
                                             CornerRadius="40"
                                             BorderColor="Aqua"
+                         Grid.Row="0" Grid.Column="1"
                                                 ></Button>
                 <Button x:Name="btn3"
+                        VerticalOptions="Center"
+                                            HorizontalOptions="Center"
                                             HeightRequest="{Binding Width, Source={x:Reference btn1}}"
                                             Text="RNG" 
                                             TextColor="Aqua"
                                             CornerRadius="40"
                                             BorderColor="Aqua"
+                         Grid.Row="0" Grid.Column="2"
                                                 ></Button>
                 <Button x:Name="btn4"
                                             VerticalOptions="Center"
@@ -91,17 +100,17 @@
                                             Text="SPD" TextColor="Aqua"
                                             CornerRadius="40"
                                             BorderColor="Aqua"
+                         Grid.Row="0" Grid.Column="3"
+                        
                                                 ></Button>
-                
-            </StackLayout>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Label Text="{Binding attack}" TextColor="AntiqueWhite" FontSize="Medium"></Label>
-                <Label Text="{Binding defense}" TextColor="AntiqueWhite" FontSize="Medium"></Label>
-                <Label Text="{Binding rangedDefense}" TextColor="AntiqueWhite" FontSize="Medium"></Label>
-                <Label Text="{Binding speed}" TextColor="AntiqueWhite" FontSize="Medium"></Label>
 
-            </StackLayout>
+                <Label  Text ="{Binding Data.attack}" VerticalOptions="Center" HorizontalOptions="Center"  TextColor="AntiqueWhite" FontSize="Small" Grid.Row="1" Grid.Column="0"/>
+                <Label  Text ="{Binding Data.defense}"  VerticalOptions="Center" HorizontalOptions="Center" TextColor="AntiqueWhite" FontSize="Small" Grid.Row="1" Grid.Column="1"/>
+                <Label  Text ="{Binding Data.rangedDefense}" VerticalOptions="Center" HorizontalOptions="Center"  TextColor="AntiqueWhite" FontSize="Small" Grid.Row="1" Grid.Column="2"/>
+                <Label  Text ="{Binding Data.speed}" VerticalOptions="Center" HorizontalOptions="Center" TextColor="AntiqueWhite" FontSize="Small" Grid.Row="1" Grid.Column="3"/>
+            </Grid>
+            
 
         </StackLayout>         
             
