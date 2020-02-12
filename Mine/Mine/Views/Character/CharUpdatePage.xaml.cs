@@ -29,6 +29,7 @@ namespace PrimeAssault.Views
         /// </summary>
         public CharUpdatePage(PlayerCharacterViewModel data)
         {
+            InitializeComponent();
 
             BindingContext = this.viewModel = data;
         }
@@ -52,6 +53,11 @@ namespace PrimeAssault.Views
         async void Cancel_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
         }
     }
 }
