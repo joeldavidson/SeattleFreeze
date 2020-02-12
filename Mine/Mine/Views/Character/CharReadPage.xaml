@@ -14,11 +14,11 @@
     
     <ContentPage.Content>
         
-        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
             
             <Image Source="{Binding Data.imageURI}"
-                   HeightRequest="500"
-                   WidthRequest="500"
+                   HeightRequest="250"
+                   WidthRequest="250"
             ></Image>
 
             <Label Text="{Binding Data.Name}" FontSize="Header" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="AntiqueWhite"></Label>
