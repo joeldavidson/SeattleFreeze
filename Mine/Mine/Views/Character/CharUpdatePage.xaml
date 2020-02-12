@@ -74,7 +74,7 @@
                 ></Button>
                 <Label Text="/" FontSize="Header"
                    Grid.Row="2" Grid.Column="1"/>
-                <Button x:Name="btn1"
+                <Button x:Name="btn2"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 HeightRequest="{Binding Width, Source={x:Reference btn1}}"
@@ -101,26 +101,7 @@
         <!--End of Column 1-->
 
         <!--Column 2 inside Row 1-->
-        <Button x:Name="btn1"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                Text="ATK" TextColor="Aqua"
-                Grid.Column="1"
-                Grid.Row="0"
-                CornerRadius="40"
-                BorderColor="Aqua"
-                ></Button>
-        <Button x:Name="btn2"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                HeightRequest="{Binding Width, Source={x:Reference btn2}}"
-                Text="DEF" TextColor="Aqua"
-                Grid.Column="1"
-                Grid.Row="1"
-                CornerRadius="40"
-                BorderColor="Aqua"
-                ></Button>
+
         <Button x:Name="btn3"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
