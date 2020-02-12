@@ -14,11 +14,15 @@
     <ContentPage.Content>
         
         <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
-            <Image Source="{Binding Data.imageURI}"></Image>
+            <Image Source="{Binding Data.imageURI}"
+                   HeightRequest="500"
+                   WidthRequest="500"
+                   ></Image>
             <Label Text="{Binding Data.Name}" FontSize="Header" FontAttributes="Bold"></Label>
 
 
             <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label Text="Class:" FontSize="Small"></Label>
                 <Label Text="{Binding Data.jobClass}" FontSize="Small"></Label>
                 <Label Text="{Binding Data.health}" FontSize="Small"></Label>
             </StackLayout>
@@ -30,13 +34,25 @@
                 <Label Text="{Binding Data.ability}" FontSize="Small"></Label>
             </StackLayout>
 
-            <Frame BackgroundColor="##803f035f" 
-                   HasShadow="False" 
+            <Frame BackgroundColor="AliceBlue"  
+                   HasShadow="True"
                    CornerRadius="0"
                    Padding="10"
+                   IsVisible="True"  
                    Margin="3"
                    >
                 <Button Text="Move1"></Button>
+
+            </Frame>
+            <Frame BackgroundColor= "AliceBlue" 
+                   HasShadow="True"
+                   CornerRadius="0"
+                   Padding="10"
+                   IsVisible="True"  
+                   Margin="3"
+                   >
+                <Button Text="Move2"></Button>
+
             </Frame>
                      
         </StackLayout>         
