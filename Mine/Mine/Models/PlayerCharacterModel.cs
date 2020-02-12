@@ -19,6 +19,7 @@ namespace PrimeAssault.Models
         uint experienceTotal;
         uint nextLevel;
         double nextLevelMultiplier;
+        public string bio { get; set; } = "";
         string jobClass;
         
         /*
@@ -36,6 +37,7 @@ namespace PrimeAssault.Models
         public bool Update(PlayerCharacterModel data)
         {
             Name = data.Name;
+            bio = data.bio;
             Description = data.Description;
             jobClass = data.jobClass;
             level = data.level;
@@ -184,7 +186,7 @@ namespace PrimeAssault.Models
 
         bool updateClass()//ugly awful class, not maintanable, needs work. So sorry to everyone, just trying to get class up on its feet. Hardcode galore.
         {
-            if (jobClass == "soldier")
+            if (jobClass == "soldier") //helper class with default values for each class
             {
                 levelMultipliers();
                 healthMult += .2;
