@@ -11,7 +11,6 @@ namespace PrimeAssault.Services
         /// The Data List
         /// This is where the items are stored
         /// </summary>
-        public List<ItemModel> datalist;
         public List<PlayerCharacterModel> datalist2;
 
         /// <summary>
