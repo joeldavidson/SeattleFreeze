@@ -5,14 +5,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PrimeAssault.Views.CharUpdatePage"
-             Title="Update">
+             Title="CharUpdate">
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png"/>
         <ToolbarItem Text="Save" Clicked="Save_Clicked" IconImageSource="icon_save.png"/>
     </ContentPage.ToolbarItems>
-
-    <Grid Margin="10" BackgroundColor="#4D3f035f">
+    <ContentPage.Content>
+        <Grid Margin="10" BackgroundColor="MidnightBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -21,7 +21,6 @@
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -39,7 +38,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <!--Column 1 inside Row 1-->
+                    <!--Column 1 inside Row 1-->
             <ImageButton Source="TempProfile.png"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand"
@@ -101,29 +100,6 @@
         <!--End of Column 1-->
 
         <!--Column 2 inside Row 1-->
-
-        <Button x:Name="btn3"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                Text="RNG" 
-                TextColor="Aqua"
-                Grid.Column="1"
-                Grid.Row="2"
-                CornerRadius="40"
-                BorderColor="Aqua"
-                ></Button>
-        <Button x:Name="btn4"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"
-                HeightRequest="{Binding Width, Source={x:Reference btn4}}"
-                Text="SPD" TextColor="Aqua"
-                Grid.Column="1"
-                Grid.Row="3"
-                CornerRadius="40"
-                BorderColor="Aqua"
-                ></Button>
-        <!--End of Column 2-->
 
         <!--Column 3 inside Row 1-->
         <Label Text="{Binding attack}"
@@ -234,4 +210,5 @@
                                             ></Button>
         <!--End of Column 7-->
     </Grid>
+    </ContentPage.Content>
 </ContentPage>
