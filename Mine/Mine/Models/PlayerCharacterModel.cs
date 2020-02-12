@@ -159,7 +159,7 @@ namespace PrimeAssault.Models
 
         bool updateClass()//ugly awful class, not maintanable, needs work. So sorry to everyone, just trying to get class up on its feet. Hardcode galore.
         {
-            if (jobClass == "soldier")
+            if (jobClass == "soldier") //helper class with default values for each class
             {
                 levelMultipliers();
                 healthMult += .2;
