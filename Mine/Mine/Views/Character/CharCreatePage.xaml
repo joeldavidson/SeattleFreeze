@@ -18,7 +18,7 @@
             <Image Source="TempProfile.png"></Image>
 
             <Entry  Text ="{Binding Data.Name}"  Placeholder="Name" FontSize="Small" />
-            <Picker x:Name="picker"
+            <Picker x:Name="pick"
             Title="Class"
             TitleColor="Aqua">
                     <Picker.ItemsSource>
