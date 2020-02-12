@@ -16,7 +16,7 @@
             <Image Source="TempProfile.png"></Image>
 
             <Entry  Text ="{Binding Data.Name}"  Placeholder="Name" FontSize="Small" />
-            <Editor TextColor ="White" Text ="{Binding Data.bio}"  Placeholder="Give your character a backstory" FontSize="Small" Margin="0" AutoSize="TextChanges" />
+            <Editor Text ="{Binding Data.bio}"  Placeholder="Give your character a backstory" FontSize="Small" Margin="0" AutoSize="TextChanges" />
             
         </StackLayout>
     </ContentPage.Content>
