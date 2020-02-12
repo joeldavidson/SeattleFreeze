@@ -1,23 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PrimeAssault.Views.CharCreatePage">
+             x:Class="PrimeAssault.Views.CharCreatePage"
+              BackgroundImageSource="workshop.png">
     
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png" />
         <ToolbarItem Text="Save" Clicked="Save_Clicked" IconImageSource="icon_save.png"/>
     </ContentPage.ToolbarItems>
-    
+
     <ContentPage.Content>
-           
-            
-        <StackLayout>
+        
+        <StackLayout Padding="40,20,40,20">
+            <Label TextColor="Aqua" HorizontalOptions="Center" FontSize="Header">ANDROID LAB</Label>
             <Image Source="TempProfile.png"></Image>
 
-            <Label Text="Name" FontSize="Medium" />
-            <Entry Text ="{Binding Data.Name}"  Placeholder="Name" FontSize="Small" />
-            <Label Text="Character Bio" FontSize="Medium" />
-            <Editor Text ="{Binding Data.bio}" Placeholder="Give your character a backstory" FontSize="Small" Margin="0" AutoSize="TextChanges" />
+            <Entry  Text ="{Binding Data.Name}"  Placeholder="Name" FontSize="Small" />
+            <Editor TextColor ="White" Text ="{Binding Data.bio}"  Placeholder="Give your character a backstory" FontSize="Small" Margin="0" AutoSize="TextChanges" />
+            
         </StackLayout>
     </ContentPage.Content>
 
