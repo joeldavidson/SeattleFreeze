@@ -69,7 +69,7 @@ namespace PrimeAssault.Models
             Ringleader
         }
 
-        public PlayerCharacterModel()
+        public PlayerCharacterModel() : base()
         {
             experienceTotal = 0; // will have to flesh out more if character is created at higher level. Might want constructor which takes int for level
             nextLevel = 100;
