@@ -30,7 +30,7 @@ namespace PrimeAssault.Services
         {
             datalist2 = new List<PlayerCharacterModel>()
             {
-                new PlayerCharacterModel {Name = "Harvey II", Description = "He's a lean mean killing machine!"}
+                new PlayerCharacterModel {Name = "Harvey II", Description = "He's a lean mean killing machine!", Speed = }
             };
 
             return true;
