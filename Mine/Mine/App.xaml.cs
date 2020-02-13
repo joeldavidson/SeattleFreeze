@@ -18,6 +18,7 @@ namespace PrimeAssault
 
             DependencyService.Register<MockDataStore>();
             DependencyService.Register<MockCharDataStore>();
+            DependencyService.Register<MockMonDataStore>();
 
             // Call the Main Page to open
             MainPage = new MainPage();

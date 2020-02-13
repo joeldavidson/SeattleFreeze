@@ -14,11 +14,10 @@ namespace PrimeAssault.Models
 
         const string DEFAULT_URI = "sewer_gator.png";
 
-        public uint experienceTotal { get; set; } = 0;
+        public uint experienceTotal { get; set; } = 1;
         
         ItemModel Drop = new ItemModel(); //should be retrieved at random?
         
-        public int Value { get; set; } = 0;
         public string type { get; set; } = "sewer creature";
 
         public bool Update(MonsterModel data)
@@ -46,12 +45,7 @@ namespace PrimeAssault.Models
 
         public MonsterModel() : base()
         {
-            imageURI = "sewer_monster.png";
-        }
-
-        int GetItemBonus()  //Get all the bonuses for the attributes (should be incorporated after items)
-        {
-            return 0;
+            imageURI = DEFAULT_URI;
         }
 
         bool LevelUp() //Levels up the Monster if they are ready
