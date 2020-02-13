@@ -189,4 +189,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\sewer_gator.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\raygun.png" />
+  </ItemGroup>
 </Project>
