@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace PrimeAssault.Services
 {
-    public class MockMonDataStore : IDataStore<PlayerMonsterModel>
+    public class MockMonDataStore : IDataStore<MonsterModel>
     {
         /// <summary>
         /// The Data List
         /// This is where the items are stored
         /// </summary>
-        public List<PlayerMonsterModel> datalist2;
+        public List<MonsterModel> datalist2;
 
         /// <summary>
         /// Constructor for the Storee
@@ -28,9 +28,9 @@ namespace PrimeAssault.Services
         /// <returns></returns>
         public bool LoadDefaultData()
         {
-            datalist2 = new List<PlayerMonsterModel>()
+            datalist2 = new List<MonsterModel>()
             {
-                new PlayerMonsterModel {Name = "Harvey II", Description = "He's a lean mean killing machine!", attack = 500}
+                new MonsterModel {Name = "Evil Harvey", Description = "He's a lean mean killing machine!", attack = 500}
             };
 
             return true;
@@ -41,7 +41,7 @@ namespace PrimeAssault.Services
         /// </summary>
         /// <param name="data"></param>
         /// <returns>True for pass, else fail</returns>
-        public async Task<bool> CreateAsync(PlayerMonsterModel data)
+        public async Task<bool> CreateAsync(MonsterModel data)
         {
             datalist2.Add(data);
 
@@ -53,9 +53,9 @@ namespace PrimeAssault.Services
         /// </summary>
         /// <param name="data"></param>
         /// <returns>True for pass, else fail</returns>
-        public async Task<bool> UpdateAsync(PlayerMonsterModel data)
+        public async Task<bool> UpdateAsync(MonsterModel data)
         {
-            var oldData = datalist2.Where((PlayerMonsterModel arg) => arg.Id == data.Id).FirstOrDefault();
+            var oldData = datalist2.Where((MonsterModel arg) => arg.Id == data.Id).FirstOrDefault();
             datalist2.Remove(oldData);
             datalist2.Add(data);
 
@@ -70,7 +70,7 @@ namespace PrimeAssault.Services
         /// <returns>True for pass, else fail</returns>
         public async Task<bool> DeleteAsync(string id)
         {
-            var oldData = datalist2.Where((PlayerMonsterModel arg) => arg.Id == id).FirstOrDefault();
+            var oldData = datalist2.Where((MonsterModel arg) => arg.Id == id).FirstOrDefault();
             datalist2.Remove(oldData);
 
             return await Task.FromResult(true);
@@ -81,7 +81,7 @@ namespace PrimeAssault.Services
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Record if found else null</returns>
-        public async Task<PlayerMonsterModel> ReadAsync(string id)
+        public async Task<MonsterModel> ReadAsync(string id)
         {
             return await Task.FromResult(datalist2.FirstOrDefault(s => s.Id == id));
         }
@@ -91,7 +91,7 @@ namespace PrimeAssault.Services
         /// </summary>
         /// <param name="forceRefresh"></param>
         /// <returns></returns>
-        public async Task<IEnumerable<PlayerMonsterModel>> IndexAsync(bool forceRefresh = false)
+        public async Task<IEnumerable<MonsterModel>> IndexAsync(bool forceRefresh = false)
         {
             return await Task.FromResult(datalist2);
         }
