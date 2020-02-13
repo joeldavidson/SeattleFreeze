@@ -269,19 +269,6 @@ namespace PrimeAssault.Models
             }
             return false;
         }
-        public bool changeHealth(int damVal)
-        {
-            if (health <= 0)
-                return false;
-            health -= damVal;
-            if (health <= 0)
-            {
-                health = 0;
-                dead = true;
-            }
-            if (health > maxHealth)
-                health = maxHealth;
-            return true;
-        }
+        
     }
 }
