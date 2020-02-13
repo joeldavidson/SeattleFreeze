@@ -16,6 +16,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\Monster\MonCreatePage.xaml.cs">
+      <DependentUpon>MonCreatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Monster\MonDeletePage.xaml.cs">
+      <DependentUpon>MonDeletePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Monster\MonIndexPage.xaml.cs">
+      <DependentUpon>MonIndexPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Monster\MonReadPage.xaml.cs">
+      <DependentUpon>MonReadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Monster\MonUpdatePage.xaml.cs">
+      <DependentUpon>MonUpdatePage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Character\CharDeletePage.xaml.cs">
       <DependentUpon>CharDeletePage.xaml</DependentUpon>
     </Compile>

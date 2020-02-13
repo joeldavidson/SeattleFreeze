@@ -1,190 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns = "http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
              x:Class="PrimeAssault.Views.CharUpdatePage"
-             Title="CharUpdate">
+              BackgroundImageSource="workshop.png">
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text = "Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png"/>
-        <ToolbarItem Text = "Save" Clicked="Save_Clicked" IconImageSource="icon_save.png"/>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png" />
+        <ToolbarItem Text="Save" Clicked="Save_Clicked" IconImageSource="icon_save.png"/>
     </ContentPage.ToolbarItems>
+
     <ContentPage.Content>
-        <Grid Margin = "10" BackgroundColor="MidnightBlue">
-            <Grid.RowDefinitions>
-                <RowDefinition Height = "Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height = "Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height = "Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width = "*" />
-            </Grid.ColumnDefinitions >
+        <StackLayout 
+            
+            Padding="40,20,40,20">
+            <Label TextColor="Aqua" HorizontalOptions="Center" FontSize="Header">ANDROID LAB</Label>
+            <Image Source="TempProfile.png"></Image>
 
-            <Grid Margin="10" Grid.Row ="0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height = "Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height = "Auto" />
-                </Grid.RowDefinitions >
-                <Grid.ColumnDefinitions >
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width = "*" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
+            <Entry  Text ="{Binding Data.Name}" Placeholder="{Binding Data.Name}" FontSize="Small" />
+            <Picker x:Name="picker"
+            Title="Class"
+            TitleColor="Aqua">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Soldier</x:String>
+                        <x:String>Hunter</x:String>
+                        <x:String>Brawler</x:String>
+                        <x:String>Mechanist</x:String>
+                        <x:String>Mechanic</x:String>
+                        <x:String>Ringleader</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Grid>
 
-                <!--Column 1 inside Row 1-->
-                <ImageButton Source = "TempProfile.png"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand"
-                    Grid.Column="1"
-                    Grid.Row="0"
-            ></ImageButton>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="LVL" Grid.Row="0" Grid.Column="0"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="ATK" Grid.Row="0" Grid.Column="1"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="DEF" Grid.Row="0" Grid.Column="2"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="RDF" Grid.Row="0" Grid.Column="3"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="SPD" Grid.Row="0" Grid.Column="4"/>
 
-                <Label Text = "{Binding Data.Name}" FontSize="Header"
-                   Grid.Row="1" Grid.Column="1"/>
-                <Label Text = "{Binding Data.jobClass}" FontSize="Header"
-                   Grid.Row="2" Grid.Column="1"/>
-                <Grid Margin = "10" Grid.Column="2" Grid.Row="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height = "*" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height = "*" />
-                    </Grid.RowDefinitions >
-                    <Grid.ColumnDefinitions >
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width = "*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <Button x:Name="btn1"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Fill"
-                        Text="{Binding Data.health}" TextColor="Aqua"
-                        Grid.Column="0"
-                        Grid.Row="1"
-                        CornerRadius="20"
-                        BorderColor="Aqua"
-                ></Button>
-                    <Label Text = "/" FontSize="Header"
-                           Grid.Row="1" Grid.Column="1"/>
-                    <Button x:Name="btn2"
-                            VerticalOptions="Center"
-                            HorizontalOptions="CenterAndExpand"
-                            Text="{Binding Data.maxHealth}" TextColor="Aqua"
-                            Grid.Column="2"
-                            Grid.Row="1"
-                            CornerRadius="40"
-                            BorderColor="Aqua"
-                ></Button>
-                </Grid>
-                <Button Text = "{Binding Data.Name}" TextColor="Aqua"
-                Grid.Column="1"
-                Grid.Row="1"
-                CornerRadius="20"
-                BorderColor="Aqua"
-                ></Button>
-                <Button Text = "{Binding Data.health} / {Binding Data.maxHealth}" TextColor="Aqua"
-                Grid.Column="1"
-                Grid.Row="2"
-                CornerRadius="10"
-                BorderColor="Aqua"
-                ></Button>
+                <Entry  Text ="{Binding Data.level}"  Placeholder="1" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="0"/>
+                <Entry  Text ="{Binding Data.attack}"  Placeholder="10" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+                <Entry  Text ="{Binding Data.defense}"  Placeholder="10" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="2"/>
+                <Entry  Text ="{Binding Data.rangedDefense}"  Placeholder="10" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="3"/>
+                <Entry  Text ="{Binding Data.speed}" Placeholder="10" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="4"/>
+
             </Grid>
-            <Grid Margin = "10" Grid.Column="1" Grid.Row="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height = "*" />
-                        <RowDefinition Height="*" />
-                        <RowDefinition Height = "*" />
-                    </Grid.RowDefinitions >
-                    <Grid.ColumnDefinitions >
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width = "*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width = "*" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
-                    <!--Column 4 inside Row 1-->
-                    <Button Text="Torso" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="3"
-                                                Grid.Row="1"
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="10"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                    <!--End of Column 4-->
-
-                    <!--Column 5 inside Row 1-->
-                    <Button Text="Head" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="3"
-                                                Grid.Row="0"
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="20"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                    <Button Text="Boots" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="3"
-                                                Grid.Row="2"
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="20"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                    <!--End of Column 5-->
-
-                    <!--Column 6 inside Row 1-->
-                    <Button Text="R-Hand" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="5"
-                                                Grid.Row="1"
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="20"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                    <Button Text="Ring 1" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="1"
-                                                Grid.Row="1"
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="40"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                    <!--End of Column 6-->
-
-                    <!--Column 7 inside Row 1-->
-                    <Button Text="L-Hand" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="2"
-                                                Grid.Row="1"
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="20"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                    <Button Text="Ring 2" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="0"
-                                                Grid.Row="1"
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="40"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                </Grid>
-
-
-        </Grid>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

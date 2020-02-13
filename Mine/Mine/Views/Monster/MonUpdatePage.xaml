@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PrimeAssault.Views.CharCreatePage"
+             x:Class="PrimeAssault.Views.MonUpdatePage"
               BackgroundImageSource="workshop.png">
-    
+
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png" />
         <ToolbarItem Text="Save" Clicked="Save_Clicked" IconImageSource="icon_save.png"/>
@@ -17,23 +17,23 @@
             <Label TextColor="Aqua" HorizontalOptions="Center" FontSize="Header">ANDROID LAB</Label>
             <Image Source="TempProfile.png"></Image>
 
-            <Entry  Text ="{Binding Data.Name}"  Placeholder="Name" FontSize="Small" />
-            <Picker x:Name="pick"
+            <Entry  Text ="{Binding Data.Name}" Placeholder="{Binding Data.Name}" FontSize="Small" />
+            <Picker x:Name="picker"
             Title="Class"
             TitleColor="Aqua">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Soldier</x:String>
-                            <x:String>Hunter</x:String>
-                            <x:String>Brawler</x:String>
-                            <x:String>Mechanist</x:String>
-                            <x:String>Mechanic</x:String>
-                            <x:String>Ringleader</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Soldier</x:String>
+                        <x:String>Hunter</x:String>
+                        <x:String>Brawler</x:String>
+                        <x:String>Mechanist</x:String>
+                        <x:String>Mechanic</x:String>
+                        <x:String>Ringleader</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
             <Grid>
-                
+
                 <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="LVL" Grid.Row="0" Grid.Column="0"/>
                 <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="ATK" Grid.Row="0" Grid.Column="1"/>
                 <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="DEF" Grid.Row="0" Grid.Column="2"/>
