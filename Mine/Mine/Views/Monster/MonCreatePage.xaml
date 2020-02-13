@@ -3,6 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrimeAssault.Views.MonCreatePage"
               BackgroundImageSource="workshop.png">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="StatsLabel" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="End"/>
+                <Setter Property="TextColor" Value="OrangeRed"/>
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
     
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png" />
@@ -21,11 +33,11 @@
             <Editor Text="{Binding Data.Description}"  Placeholder="Monster Description" FontSize="Small" Margin="0" AutoSize="TextChanges" />
             <Grid>
                 
-                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="LVL" Grid.Row="0" Grid.Column="0"/>
-                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="ATK" Grid.Row="0" Grid.Column="1"/>
-                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="DEF" Grid.Row="0" Grid.Column="2"/>
-                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="RDF" Grid.Row="0" Grid.Column="3"/>
-                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="SPD" Grid.Row="0" Grid.Column="4"/>
+                <Label Style="{StaticResource StatsLabel}" Text="LVL" Grid.Row="0" Grid.Column="0"/>
+                <Label Style="{StaticResource StatsLabel}" Text="ATK" Grid.Row="0" Grid.Column="1"/>
+                <Label Style="{StaticResource StatsLabel}" Text ="DEF" Grid.Row="0" Grid.Column="2"/>
+                <Label Style="{StaticResource StatsLabel}" Text="RDF" Grid.Row="0" Grid.Column="3"/>
+                <Label Style="{StaticResource StatsLabel}" Text="SPD" Grid.Row="0" Grid.Column="4"/>
 
                 <Entry  Text ="{Binding Data.level}"  Placeholder="1" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="0"/>
                 <Entry  Text ="{Binding Data.attack}"  Placeholder="10" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
