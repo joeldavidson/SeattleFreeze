@@ -49,9 +49,9 @@
                                     </Grid.ColumnDefinitions>
 
                                     <!--Column 1 inside Row 1-->
-                                    <ImageButton Source="TempProfile.png"
-                                                         HorizontalOptions="FillAndExpand"
-                                                         VerticalOptions="FillAndExpand"
+                                    <ImageButton Source="{Binding imageURI}"
+                                                         HorizontalOptions="CenterAndExpand"
+                                                         VerticalOptions="CenterAndExpand"
                                                          Grid.Column="0"
                                                          Grid.Row="0"
                                                          Grid.RowSpan="2">
