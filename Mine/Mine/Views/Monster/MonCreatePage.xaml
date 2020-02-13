@@ -14,13 +14,13 @@
         <StackLayout 
             
             Padding="40,20,40,20">
-            <Label TextColor="Aqua" HorizontalOptions="Center" FontSize="Header">ANDROID LAB</Label>
-            <Image Source="TempProfile.png"></Image>
+            <Label TextColor="Orange" HorizontalOptions="Center" FontSize="Header">MONSTER LAB</Label>
+            <Image Source="sewer_gator.png" HeightRequest="250" WidthRequest="250"></Image>
 
             <Entry  Text ="{Binding Data.Name}"  Placeholder="Name" FontSize="Small" />
             <Picker x:Name="pick"
             Title="Class"
-            TitleColor="Aqua">
+            TitleColor="OrangeRed">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>Soldier</x:String>
@@ -34,11 +34,11 @@
                 </Picker>
             <Grid>
                 
-                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="LVL" Grid.Row="0" Grid.Column="0"/>
-                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="ATK" Grid.Row="0" Grid.Column="1"/>
-                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="DEF" Grid.Row="0" Grid.Column="2"/>
-                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="RDF" Grid.Row="0" Grid.Column="3"/>
-                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="SPD" Grid.Row="0" Grid.Column="4"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="LVL" Grid.Row="0" Grid.Column="0"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="ATK" Grid.Row="0" Grid.Column="1"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="DEF" Grid.Row="0" Grid.Column="2"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="RDF" Grid.Row="0" Grid.Column="3"/>
+                <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="SPD" Grid.Row="0" Grid.Column="4"/>
 
                 <Entry  Text ="{Binding Data.level}"  Placeholder="1" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="0"/>
                 <Entry  Text ="{Binding Data.attack}"  Placeholder="10" FontSize="Small" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
