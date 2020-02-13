@@ -14,6 +14,6 @@ namespace PrimeAssault.Models
         public string Name { get; set; } = "";
 
         // Description
-        public string Description { get; set; } = "Description";
+        public string Description { get; set; } = "";
     }
 }

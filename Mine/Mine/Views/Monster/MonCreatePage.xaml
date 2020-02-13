@@ -18,20 +18,7 @@
             <Image Source="sewer_gator.png" HeightRequest="250" WidthRequest="250"></Image>
 
             <Entry  Text ="{Binding Data.Name}"  Placeholder="Name" FontSize="Small" />
-            <Picker x:Name="pick"
-            Title="Class"
-            TitleColor="OrangeRed">
-                    <Picker.ItemsSource>
-                        <x:Array Type="{x:Type x:String}">
-                            <x:String>Soldier</x:String>
-                            <x:String>Hunter</x:String>
-                            <x:String>Brawler</x:String>
-                            <x:String>Mechanist</x:String>
-                            <x:String>Mechanic</x:String>
-                            <x:String>Ringleader</x:String>
-                        </x:Array>
-                    </Picker.ItemsSource>
-                </Picker>
+            <Editor Text="{Binding Data.Description}"  Placeholder="Monster Description" FontSize="Small" Margin="0" AutoSize="TextChanges" />
             <Grid>
                 
                 <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="OrangeRed" Text="LVL" Grid.Row="0" Grid.Column="0"/>
