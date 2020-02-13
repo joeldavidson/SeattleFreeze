@@ -19,6 +19,7 @@ namespace PrimeAssault.Models
         ItemModel Drop = new ItemModel(); //should be retrieved at random?
         
         public int Value { get; set; } = 0;
+        public string type { get; set; } = "sewer creature";
 
         public bool Update(MonsterModel data)
         {
@@ -91,7 +92,10 @@ namespace PrimeAssault.Models
             attackMult = 1;
         }
 
-        
-        
+        public int dropExp()
+        {
+            return (BASE_XP + (LVL_MULT * level) ^ LVL_EXP);
+        }
+
     }
 }
