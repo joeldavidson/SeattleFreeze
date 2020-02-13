@@ -56,6 +56,7 @@ namespace PrimeAssault.Models
         bool LevelUp() //Levels up the Monster if they are ready
         {
             level++;
+            increaseStats();
             return true;
         }
 
