@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="PrimeAssault.Views.MonReadPage"
-             BackgroundImageSource="Workshop.png">
+             BackgroundImageSource="neonStairs.png">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -36,10 +36,7 @@
         
         <StackLayout Orientation="Vertical" HorizontalOptions="Center">
             
-            <Image Source="{Binding Data.imageURI}"
-                   HeightRequest="250"
-                   WidthRequest="250"
-            ></Image>
+            
 
             <Label Text="{Binding Data.Name}" FontSize="Header" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="AntiqueWhite"></Label>
 
@@ -59,7 +56,12 @@
                 <Label Text="Ability: " FontSize="Small" TextColor="AntiqueWhite"></Label>
                 <Label Text="{Binding Data.ability}" FontSize="Small" TextColor="AntiqueWhite"></Label>
             </StackLayout>
-
+            
+            <Image Source="{Binding Data.imageURI}"
+                   HeightRequest="250"
+                   WidthRequest="250"
+            ></Image>
+            
             <Frame BackgroundColor="AliceBlue"  
                    HasShadow="True"
                    CornerRadius="0"
