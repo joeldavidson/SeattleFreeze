@@ -50,45 +50,28 @@
                 <Label Text="{Binding Data.ability}" FontSize="Small" TextColor="AntiqueWhite"></Label>
             </StackLayout>
 
-            <Image Source="{Binding imageURI}"
+            <Image Source="{Binding Data.imageURI}"
                    HeightRequest="250"
                    WidthRequest="250"
             ></Image>
+            
+            <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label Text="Value: " FontSize="Small" TextColor="AntiqueWhite"></Label>
+                <Label Text="{Binding Data.Value}" FontSize="Small" TextColor="AntiqueWhite"></Label>
+            </StackLayout>
 
-            <Frame BackgroundColor="AliceBlue"  
-                   HasShadow="True"
-                   CornerRadius="0"
-                   Padding="10"
-                   HorizontalOptions="Center"
-                   IsVisible="True"  
-                   Margin="3"
-                   >
-                <Button Text="Move1"></Button>
-
-            </Frame>
-            <Frame BackgroundColor= "AliceBlue" 
-                   HorizontalOptions="Center"
-                   HasShadow="True"
-                   CornerRadius="0"
-                   Padding="10"
-                   IsVisible="True"  
-                   Margin="3"
-                   >
-                <Button Text="Move2"></Button>
-
-            </Frame>
             <Grid>
-                <Label Style="{StaticResource StatsLabel}" Text="LVL" Grid.Column="0"/>
+                <Label Style="{StaticResource StatsLabel}" Text="Health" Grid.Column="0"/>
                 <Label Style="{StaticResource StatsLabel}" Text="ATK"  Grid.Column="1"/>
                 <Label Style="{StaticResource StatsLabel}" Text ="DEF" Grid.Column="2"/>
                 <Label Style="{StaticResource StatsLabel}" Text="RDF" Grid.Column="3"/>
                 <Label Style="{StaticResource StatsLabel}" Text="SPD" Grid.Column="4"/>
 
                 <Label Style="{StaticResource StatsNumLabel}"  Text ="{Binding Data.healthValue}" Grid.Column="0"/>
-                <Label Style="{StaticResource StatsNumLabel}"  Text ="{Binding Data.attack}" Grid.Column="1"/>
-                <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.defense}"  Grid.Column="2"/>
-                <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.rangedDefense}" Grid.Column="3"/>
-                <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.speed}" Grid.Column="4"/>
+                <Label Style="{StaticResource StatsNumLabel}"  Text ="{Binding Data.attackValue}" Grid.Column="1"/>
+                <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.defenseValue}"  Grid.Column="2"/>
+                <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.rangedDefenseValue}" Grid.Column="3"/>
+                <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.speedValue}" Grid.Column="4"/>
             </Grid>
 
 
