@@ -15,23 +15,10 @@
             
             Padding="40,20,40,20">
             <Label TextColor="Aqua" HorizontalOptions="Center" FontSize="Header">ANDROID LAB</Label>
-            <Image Source="TempProfile.png"></Image>
+            <Image Source="sewer_gator.png" HeightRequest="250" WidthRequest="250"></Image>
 
             <Entry  Text ="{Binding Data.Name}" Placeholder="{Binding Data.Name}" FontSize="Small" />
-            <Picker x:Name="picker"
-            Title="Class"
-            TitleColor="Aqua">
-                <Picker.ItemsSource>
-                    <x:Array Type="{x:Type x:String}">
-                        <x:String>Soldier</x:String>
-                        <x:String>Hunter</x:String>
-                        <x:String>Brawler</x:String>
-                        <x:String>Mechanist</x:String>
-                        <x:String>Mechanic</x:String>
-                        <x:String>Ringleader</x:String>
-                    </x:Array>
-                </Picker.ItemsSource>
-            </Picker>
+            <Editor Text="{Binding Data.Description}"  Placeholder="Monster Description" FontSize="Small" Margin="0" AutoSize="TextChanges" />
             <Grid>
 
                 <Label HorizontalOptions="Center" VerticalOptions="End" TextColor ="Magenta" Text="LVL" Grid.Row="0" Grid.Column="0"/>
