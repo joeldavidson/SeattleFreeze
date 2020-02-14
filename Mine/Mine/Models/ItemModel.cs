@@ -10,7 +10,7 @@
         //the string value
         public string valueString { get; set; } = "0g";
         //Image for the item
-        public string imageURI = "raygun.png";
+        public string imageURI { get; set; } = "raygun.png";
         //what part of the body the item is located
         public string location { get; set; } = "head";
         //how much damage the item can do
