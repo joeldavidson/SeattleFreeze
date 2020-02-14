@@ -6,7 +6,27 @@
              mc:Ignorable="d"
              x:Class="PrimeAssault.Views.MonReadPage"
              BackgroundImageSource="Workshop.png">
-    
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="StatsLabel" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="End"/>
+                <Setter Property="TextColor" Value="OrangeRed"/>
+                <Setter Property="Grid.Row" Value="0"/>
+            </Style>
+
+            <Style x:Key="StatsNumLabel" TargetType="Label">
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalOptions" Value='Center'/>
+                <Setter Property="TextColor" Value="AntiqueWhite"/>
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="Grid.Row" Value="1"/>
+
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Update" Clicked="Update_Clicked" IconImageSource="icon_edit.png"/>
         <ToolbarItem Text="Delete" Clicked="Delete_Clicked" IconImageSource="icon_delete.png"/>
@@ -63,52 +83,17 @@
 
             </Frame>
             <Grid>
-
-                <Button x:Name="btn1"
-                        VerticalOptions="Center"
-                                            HorizontalOptions="Center"
-                                            HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                                            Text="ATK" TextColor="Aqua"
-                                            CornerRadius="40"
-                                            BorderColor="Aqua"
-                         Grid.Row="0" Grid.Column="0"
-                                                >
-                </Button>
-                <Button x:Name="btn2"
-                        VerticalOptions="Center"
-                                            HorizontalOptions="Center"
-                                            HeightRequest="{Binding Width, Source={x:Reference btn2}}"
-                                            Text="DEF" TextColor="Aqua"
-                                            CornerRadius="40"
-                                            BorderColor="Aqua"
-                         Grid.Row="0" Grid.Column="1"
-                                                ></Button>
-                <Button x:Name="btn3"
-                        VerticalOptions="Center"
-                                            HorizontalOptions="Center"
-                                            HeightRequest="{Binding Width, Source={x:Reference btn1}}"
-                                            Text="RNG" 
-                                            TextColor="Aqua"
-                                            CornerRadius="40"
-                                            BorderColor="Aqua"
-                         Grid.Row="0" Grid.Column="2"
-                                                ></Button>
-                <Button x:Name="btn4"
-                                            VerticalOptions="Center"
-                                            HorizontalOptions="Center"
-                                            HeightRequest="{Binding Width, Source={x:Reference btn4}}"
-                                            Text="SPD" TextColor="Aqua"
-                                            CornerRadius="40"
-                                            BorderColor="Aqua"
-                         Grid.Row="0" Grid.Column="3"
-                        
-                                                ></Button>
-
-
-                <Label  Text ="{Binding Data.attack}" VerticalOptions="Center" HorizontalOptions="Center"  TextColor="AntiqueWhite" FontSize="Small" Grid.Row="1" Grid.Column="0"/>
-                <Label  Text ="{Binding Data.defense}"  VerticalOptions="Center" HorizontalOptions="Center" TextColor="AntiqueWhite" FontSize="Small" Grid.Row="1" Grid.Column="1"/>
-                <Label  Text ="{Binding Data.rangedDefense}" VerticalOptions="Center" HorizontalOptions="Center"  TextColor="AntiqueWhite" FontSize="Small" Grid.Row="1" Grid.Column="2"/>
-                <Label  Text ="{Binding Data.speed}" VerticalOptions="Center" HorizontalOptions="Center" TextColor="AntiqueWhite" FontSize="Small" Grid.Row="1" Grid.Column="3"/>
+                <Label Style="{StaticResource StatsLabel}" Text="LVL" Grid.Column="0"/>
+                <Label Style="{StaticResource StatsLabel}" Text="ATK"  Grid.Column="1"/>
+                <Label Style="{StaticResource StatsLabel}" Text ="DEF" Grid.Column="2"/>
+                <Label Style="{StaticResource StatsLabel}" Text="RDF" Grid.Column="3"/>
+                <Label Style="{StaticResource StatsLabel}" Text="SPD" Grid.Column="4"/>
+               
+                <Label Style="{StaticResource StatsNumLabel}"  Text ="{Binding Data.level}" Grid.Column="0"/>
+                <Label Style="{StaticResource StatsNumLabel}"  Text ="{Binding Data.attack}" Grid.Column="1"/>
+                <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.defense}"  Grid.Column="2"/>
+                <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.rangedDefense}" Grid.Column="3"/>
+                <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.speed}" Grid.Column="4"/>
             </Grid>
             
 
