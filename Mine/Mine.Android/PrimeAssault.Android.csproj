@@ -145,5 +145,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\garage.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\euphrates_lab.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
