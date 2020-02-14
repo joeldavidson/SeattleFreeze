@@ -121,8 +121,10 @@
 
                     <Label Style="{StaticResource Properties}" Text="Location"  Grid.Row ="5" Grid.Column="3"/>
                     <Picker x:Name="pick"
-           Grid.Row ="5" Grid.Column="4"
-            TitleColor="Aqua">
+                            Grid.Row ="5"
+                            Grid.Column="4"
+                            SelectedItem="{Binding Data.location}"
+                            TitleColor="Aqua">
                         <Picker.ItemsSource>
                             <x:Array Type="{x:Type x:String}">
                                 <x:String>Head</x:String>
