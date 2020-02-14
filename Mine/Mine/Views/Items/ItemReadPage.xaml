@@ -23,7 +23,6 @@
                 <Setter Property="TextColor" Value="AntiqueWhite"/>
                 <Setter Property="FontSize" Value="Small"/>
                 <Setter Property="Grid.Row" Value="1"/>
-
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -32,8 +31,7 @@
         <ToolbarItem Text="Update" Clicked="Update_Clicked" IconImageSource="icon_edit.png"/>
         <ToolbarItem Text="Delete" Clicked="Delete_Clicked" IconImageSource="icon_delete.png"/>
     </ContentPage.ToolbarItems>
-   
-
+    
     <ContentPage.Content>
 
         <StackLayout Orientation="Vertical" HorizontalOptions="Center">
@@ -53,6 +51,11 @@
             <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
                 <Label Text="Value: " FontSize="Small" TextColor="AntiqueWhite"></Label>
                 <Label Text="{Binding Data.Value}" FontSize="Small" TextColor="AntiqueWhite"></Label>
+            </StackLayout>
+            
+            <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label Text="Location: " FontSize="Small" TextColor="AntiqueWhite"></Label>
+                <Label Text="{Binding Data.location}" FontSize="Small" TextColor="AntiqueWhite"></Label>
             </StackLayout>
 
             <Grid>
@@ -87,6 +90,7 @@
                 <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.rangedDefenseMult}" Grid.Column="3" Grid.Row="2"/>
                 <Label Style="{StaticResource StatsNumLabel}" Text ="{Binding Data.speedMult}" Grid.Column="4" Grid.Row="2"/>
             </Grid>
+            <Label Text="{Binding Data.Description}" FontSize="Body" HorizontalTextAlignment="Center" TextColor="AntiqueWhite"></Label>
 
 
         </StackLayout>
