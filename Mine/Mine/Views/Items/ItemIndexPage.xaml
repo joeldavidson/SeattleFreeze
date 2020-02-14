@@ -6,7 +6,8 @@
              mc:Ignorable="d"
              x:Class="PrimeAssault.Views.ItemIndexPage"
              Title="{Binding Title}"
-             x:Name="BrowseItemsPage">
+             x:Name="BrowseItemsPage"
+             BackgroundImageSource="garage.jpg">
 
     <ContentPage.ToolbarItems>
 
@@ -17,7 +18,7 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Label Text="Monster List Page" TextColor="DeepPink" FontSize="Header" BackgroundColor="Transparent"/>
+            <Label Text="Item List Page" TextColor="DeepPink" FontSize="Header" BackgroundColor="Transparent"/>
 
             <RelativeLayout>
                 <ListView x:Name="ItemsListView" 
@@ -73,6 +74,13 @@
                                            Grid.Column="0"
                                            Grid.Row="3"
                                            VerticalOptions="CenterAndExpand"
+                                           HorizontalOptions="Center"
+                                           ></Label>
+
+                                    <Label Text= "{Binding valueString}" TextColor="Aqua"
+                                           Grid.Column="0"
+                                           Grid.Row="3"
+                                           VerticalOptions="EndAndExpand"
                                            HorizontalOptions="Center"
                                            ></Label>
 
@@ -149,87 +157,8 @@
                                                VerticalOptions="Center"/>
                                     <!--End of Column 3-->
 
-                                    <!--Column 4 inside Row 1-->
-                                    <Button Text="Torso" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="4"
-                                                Grid.Row="0"
-                                                Grid.RowSpan="4" 
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="10"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                                    <!--End of Column 4-->
 
-                                    <!--Column 5 inside Row 1-->
-                                    <Button Text="Head" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="5"
-                                                Grid.Row="0"
-                                                Grid.RowSpan="2" 
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="20"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                                    <Button Text="Boots" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="5"
-                                                Grid.Row="2"
-                                                Grid.RowSpan="2" 
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="20"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                                    <!--End of Column 5-->
 
-                                    <!--Column 6 inside Row 1-->
-                                    <Button Text="R-Hand" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="6"
-                                                Grid.Row="0"
-                                                Grid.RowSpan="2" 
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="20"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                                    <Button Text="Ring 1" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="6"
-                                                Grid.Row="2"
-                                                Grid.RowSpan="2" 
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="40"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                                    <!--End of Column 6-->
-
-                                    <!--Column 7 inside Row 1-->
-                                    <Button Text="L-Hand" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="7"
-                                                Grid.Row="0"
-                                                Grid.RowSpan="2" 
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="20"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                                    <Button Text="Ring 2" TextColor="Aqua"
-                                                HorizontalOptions="FillAndExpand"
-                                                VerticalOptions="FillAndExpand"
-                                                Grid.Column="7"
-                                                Grid.Row="2"
-                                                Grid.RowSpan="2" 
-                                                BackgroundColor="##803f035f"
-                                                CornerRadius="40"
-                                                BorderColor="Aqua"
-                                                ></Button>
-                                    <!--End of Column 7-->
                                 </Grid>
                             </ViewCell>
                         </DataTemplate>

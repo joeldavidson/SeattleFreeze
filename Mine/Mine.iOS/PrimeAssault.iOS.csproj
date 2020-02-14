@@ -192,4 +192,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\raygun.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\garage.jpg" />
+  </ItemGroup>
 </Project>

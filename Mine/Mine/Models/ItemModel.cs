@@ -6,7 +6,9 @@
     public class ItemModel : BaseModel
     {
         // the value of the item
-        public int Value{get; set;} = 0;
+        
+        public int Value { get; set; } = 0;
+        public string valueString { get; set; } = "0g";
 
         public string imageURI { get; set; } = "raygun.png";
         public string location { get; set; } = "head";
