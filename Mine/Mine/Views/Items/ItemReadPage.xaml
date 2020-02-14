@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="PrimeAssault.Views.ItemReadPage"
              Title="Read"
-             BackgroundImageSource="workshop.png">
+             BackgroundImageSource="garage.jpg">
     
     <ContentPage.Resources>
         <ResourceDictionary>
