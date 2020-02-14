@@ -42,12 +42,12 @@ namespace PrimeAssault.ViewModels
             {
                 await Add(data as MonsterModel);
             });
-
+            //Register the Delete Message
             MessagingCenter.Subscribe<MonDeletePage, MonsterModel>(this, "Delete", async (obj, data) =>
             {
                 await Delete(data as MonsterModel);
             });
-
+            //Register the Update Message
             MessagingCenter.Subscribe<MonUpdatePage, MonsterModel>(this, "Update", async (obj, data) =>
             {
                 await Update(data as MonsterModel);
@@ -66,6 +66,7 @@ namespace PrimeAssault.ViewModels
             return true;
         }
 
+        //Method for deleting a monster
         public async Task<bool> Delete(MonsterModel data)
         {
             var record = await Read(data.Id);
@@ -81,7 +82,7 @@ namespace PrimeAssault.ViewModels
 
             return result;
         }
-
+        //method for updating a monster
         public async Task<bool> Update(MonsterModel data)
         {
             var record = await Read(data.Id);
@@ -96,7 +97,7 @@ namespace PrimeAssault.ViewModels
 
             return result;
         }
-
+        //method for opening up a monster's information page
         public async Task<MonsterModel> Read(string id)
         {
             var result = await DataStore.ReadAsync(id);
