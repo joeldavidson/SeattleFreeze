@@ -53,7 +53,8 @@
             speedMult = data.speedMult;
             healthMult = data.healthMult;
 
-            Value = data.Value;
+            Value = getValue();
+            valueString = Value + "g";
             return true;
         }
 
