@@ -64,23 +64,9 @@
                     Orientation="Horizontal"
                     HorizontalOptions="Center">
 
-                            <Stepper 
-                Value="{Binding Data.Value, Mode=TwoWay}"
-                Minimum="0"
-                Maximum="100"
-                ValueChanged="Value_OnStepperValueChanged"
-                            BackgroundColor="AntiqueWhite"
-                           
-                Increment="1"/>
+                            <Entry Style="{StaticResource StatsEntry}" Text ="{Binding Data.Value}"/>
 
-                            <Label
-                x:Name="ValueValue"
-                Text="{Binding Data.Value}"
-                            TextColor="AntiqueWhite"
-                FontSize="Medium"/>
-
-
-                        </StackLayout>
+                           </StackLayout>
                     </Frame>
                 </StackLayout>
             </StackLayout>
