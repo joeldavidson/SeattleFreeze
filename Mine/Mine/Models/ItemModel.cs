@@ -7,6 +7,8 @@
     {
         // the value of the item
         public int Value{get; set;} = 0;
+        //the string value
+        public string valueString { get; set; } = "0g";
         //Image for the item
         public string imageURI = "raygun.png";
         //what part of the body the item is located
