@@ -3,7 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrimeAssault.Views.CharCreatePage"
               BackgroundImageSource="workshop.png">
-    
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="StatsLabel" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="End"/>
+                <Setter Property="TextColor" Value="OrangeRed"/>
+                <Setter Property="Grid.Row" Value="0"/>
+            </Style>
+
+            <Style x:Key="StatsEntry" TargetType="Entry">
+                <Setter Property="Placeholder" Value="1"/>
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="Keyboard" Value="Numeric"/>
+                <Setter Property="Grid.Row" Value="1"/>
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" IconImageSource="icon_cancel.png" />
         <ToolbarItem Text="Save" Clicked="Save_Clicked" IconImageSource="icon_save.png"/>
