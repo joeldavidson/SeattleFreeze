@@ -37,6 +37,11 @@ namespace PrimeAssault.Views
             await Navigation.PopAsync();
         }
 
+        /// <summary>
+        /// Deletes the current monster being read
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         async void Delete_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushModalAsync(new NavigationPage(new MonDeletePage(new MonsterViewModel(viewModel.Data))));

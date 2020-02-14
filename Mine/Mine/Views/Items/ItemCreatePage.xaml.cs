@@ -51,6 +51,11 @@ namespace PrimeAssault.Views
             await Navigation.PopModalAsync();
         }
 
+        /// <summary>
+        /// Stepper for changing the value
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void Value_OnStepperValueChanged(object sender, ValueChangedEventArgs e)
         {
             ValueValue.Text = String.Format("{0}", e.NewValue);
