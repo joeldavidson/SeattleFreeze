@@ -55,6 +55,11 @@ namespace PrimeAssault.Views
             await Navigation.PopModalAsync();
         }
 
+        /// <summary>
+        /// Return to the last page
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected override bool OnBackButtonPressed()
         {
             return true;
