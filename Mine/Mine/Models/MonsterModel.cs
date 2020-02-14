@@ -4,6 +4,7 @@ using System.Text;
 
 namespace PrimeAssault.Models
 {
+    //Enemie
     public class MonsterModel : BaseCharacterModel
     {
         //current xp give equation
@@ -12,14 +13,19 @@ namespace PrimeAssault.Models
         const int LVL_MULT = 2;
         const int LVL_EXP = 2;
 
+        //Default monster image
         const string DEFAULT_URI = "sewer_gator.png";
 
+        //Variable for experience given
         public uint experienceTotal { get; set; } = 1;
         
+        //Item that is dropped by the monster
         ItemModel Drop = new ItemModel(); //should be retrieved at random?
         
+        //Type of monster the player is facing
         public string type { get; set; } = "sewer creature";
 
+        //Information available in the event of a monster being updated
         public bool Update(MonsterModel data)
         {
             Name = data.Name;
@@ -43,19 +49,22 @@ namespace PrimeAssault.Models
             return true;
         }
 
+        //The monster (inherits from base)
         public MonsterModel() : base()
         {
             imageURI = DEFAULT_URI;
         }
 
-        bool LevelUp() //Levels up the Monster if they are ready
+        //Levels up the Monster if they are ready
+        bool LevelUp() 
         {
             level++;
             increaseStats();
             return true;
         }
 
-        void increaseStats() //Basic level up stat increases, temporary, will eventually change when classes are better hammered out
+        //Basic level up stat increases, temporary, will eventually change when classes are better hammered out
+        void increaseStats() 
         {
             health += 5;
             defense += 2;
@@ -64,6 +73,7 @@ namespace PrimeAssault.Models
             attack += 2;
         }
 
+        //Monster update
         void MonsterUpdate(MonsterModel data)
         {
             health = data.health;
@@ -77,6 +87,7 @@ namespace PrimeAssault.Models
             level = data.level;
         }
 
+        //provides multipliers for stats that are increased with every level
         void levelMultipliers()
         {
             healthMult = 1;
@@ -86,6 +97,7 @@ namespace PrimeAssault.Models
             attackMult = 1;
         }
 
+        //experience given by the monster
         public int dropExp()
         {
             return (BASE_XP + (LVL_MULT * level) ^ LVL_EXP);
