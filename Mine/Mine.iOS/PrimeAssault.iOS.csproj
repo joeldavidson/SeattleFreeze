@@ -196,6 +196,6 @@
     <BundleResource Include="Resources\garage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\ItemBackground.jpg" />
+    <BundleResource Include="Resources\euphrates_lab.jpg" />
   </ItemGroup>
 </Project>

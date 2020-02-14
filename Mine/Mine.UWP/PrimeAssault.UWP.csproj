@@ -105,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="brawler_class.png" />
+    <Content Include="euphrates_lab.jpg" />
     <Content Include="garage.jpg" />
     <Content Include="hunter_class.png" />
     <Content Include="icon_add.png" />
