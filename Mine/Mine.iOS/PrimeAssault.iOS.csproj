@@ -195,4 +195,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\garage.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ItemBackground.jpg" />
+  </ItemGroup>
 </Project>

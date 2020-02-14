@@ -112,6 +112,7 @@
     <Content Include="icon_delete.png" />
     <Content Include="icon_edit.png" />
     <Content Include="icon_save.png" />
+    <Content Include="ItemBackground.jpg" />
     <Content Include="mechanic_class.png" />
     <Content Include="mechanist_class.png" />
     <Content Include="neonStairs.png" />
