@@ -45,11 +45,6 @@
 
             <Label Text="{Binding Data.Description}" FontSize="Body" HorizontalTextAlignment="Center" TextColor="AntiqueWhite"></Label>
 
-            <StackLayout Orientation ="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Label Text="Ability: " FontSize="Small" TextColor="AntiqueWhite"></Label>
-                <Label Text="{Binding Data.ability}" FontSize="Small" TextColor="AntiqueWhite"></Label>
-            </StackLayout>
-
             <Image Source="{Binding Data.imageURI}"
                    HeightRequest="250"
                    WidthRequest="250"
