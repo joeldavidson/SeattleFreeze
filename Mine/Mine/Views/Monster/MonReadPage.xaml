@@ -12,7 +12,7 @@
             <Style x:Key="StatsLabel" TargetType="Label">
                 <Setter Property="HorizontalOptions" Value="Center"/>
                 <Setter Property="VerticalOptions" Value="End"/>
-                <Setter Property="TextColor" Value="OrangeRed"/>
+                <Setter Property="TextColor" Value="Aqua"/>
                 <Setter Property="Grid.Row" Value="0"/>
             </Style>
 
