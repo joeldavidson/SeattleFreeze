@@ -17,14 +17,21 @@
                 <Setter Property="TextColor" Value="Cyan"/>
                 <Setter Property="FontAttributes" Value="Bold"/>
                 <Setter Property="FontSize" Value="Small"/>
+            </Style>
 
+            <Style x:Key="Properties" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="End"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="TextColor" Value="Cyan"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="Small"/>
             </Style>
 
             <Style x:Key="StatsEntry" TargetType="Entry">
                 <Setter Property="Placeholder" Value="1"/>
                 <Setter Property="FontSize" Value="Small"/>
                 <Setter Property="Keyboard" Value="Numeric"/>
-               
+
             </Style>
 
         </ResourceDictionary>
@@ -53,11 +60,11 @@
                             BorderColor="White"
                             BackgroundColor="#263238"
                             Opacity="0.75">
-                    <StackLayout 
+                        <StackLayout 
                     Orientation="Horizontal"
                     HorizontalOptions="Center">
-                        
-                        <Stepper 
+
+                            <Stepper 
                 Value="{Binding Data.Value, Mode=TwoWay}"
                 Minimum="0"
                 Maximum="100"
@@ -66,14 +73,14 @@
                            
                 Increment="1"/>
 
-                        <Label
+                            <Label
                 x:Name="ValueValue"
                 Text="{Binding Data.Value}"
                             TextColor="AntiqueWhite"
                 FontSize="Medium"/>
 
-                        
-                    </StackLayout>
+
+                        </StackLayout>
                     </Frame>
                 </StackLayout>
             </StackLayout>
@@ -107,12 +114,29 @@
                     <Entry Style="{StaticResource StatsEntry}" Text ="{Binding Data.rangedDefenseMult}" Grid.Row="4" Grid.Column="3"/>
                     <Entry Style="{StaticResource StatsEntry}" Text ="{Binding Data.speedMult}" Grid.Row="4" Grid.Column="4"/>
 
-                    <Label Style="{StaticResource StatsLabel}" Text="Ranged?"  Grid.Row ="6" Grid.Column="1"/>
-                    <CheckBox IsChecked="true" Grid.Row ="6" Grid.Column="2"/>
+                    <Label Style="{StaticResource Properties}" Text="Ranged?"  Grid.Row ="5" Grid.Column="0"/>
+                    <CheckBox IsChecked="true" Grid.Row ="5" Grid.Column="1"/>
+
+
+
+                    <Label Style="{StaticResource Properties}" Text="Location"  Grid.Row ="5" Grid.Column="3"/>
+                    <Picker x:Name="pick"
+           Grid.Row ="5" Grid.Column="4"
+            TitleColor="Aqua">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Head</x:String>
+                                <x:String>Torso</x:String>
+                                <x:String>Arms</x:String>
+                                <x:String>Hand</x:String>
+                                <x:String>Ring</x:String>
+                            </x:Array>
+                        </Picker.ItemsSource>
+                    </Picker>
                 </Grid>
             </Frame>
         </StackLayout>
     </ContentPage.Content>
-    
-    
+
+
 </ContentPage>
