@@ -15,7 +15,7 @@
             
             Padding="40,20,40,20">
             <Label TextColor="Aqua" HorizontalOptions="Center" FontSize="Header">ANDROID LAB</Label>
-            <Image Source="TempProfile.png"></Image>
+            <Image Source="soldier_class.png" HeightRequest="250" WidthRequest="250"></Image>
 
             <Entry  Text ="{Binding Data.Name}" Placeholder="{Binding Data.Name}" FontSize="Small" />
             <Picker x:Name="picker"
