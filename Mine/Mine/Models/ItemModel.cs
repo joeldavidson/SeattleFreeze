@@ -8,7 +8,7 @@
         // the value of the item
         public int Value{get; set;} = 0;
 
-        public string imageURI = "raygun.png";
+        public string imageURI { get; set; } = "raygun.png";
         public string location { get; set; } = "head";
         public int attackValue { get; set; } = 0;
         public int defenseValue { get; set; } = 0;
