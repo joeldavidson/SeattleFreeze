@@ -94,5 +94,39 @@ namespace PrimeAssault.Views
         {
             await DisplayAlert("Character Speed", "The Speed stat offers blah bla blah", "Dismiss");
         }
+
+        async void Head_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Head Item", "blah bla blah", "Dismiss");
+        }
+
+        async void Torso_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Torso Item", "blah bla blah", "Dismiss");
+        }
+
+        async void RightHand_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Right Hand Item", "blah bla blah", "Dismiss");
+        }
+
+        async void LeftHand_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Left Hand Item", "blah bla blah", "Dismiss");
+        }
+        async void Boots_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Boot Item", "blah bla blah", "Dismiss");
+        }
+
+        async void Ring1_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Ring 1 Item", "blah bla blah", "Dismiss");
+        }
+
+        async void Ring2_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Ring 2 Item", "blah bla blah", "Dismiss");
+        }
     }
 }
