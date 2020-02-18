@@ -42,8 +42,8 @@ namespace PrimeAssault.Views
                     case (int)MenuItemEnum.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
-                    case (int)MenuItemEnum.Game:
-                        MenuPages.Add(id, new NavigationPage(new GamePage()));
+                    case (int)MenuItemEnum.PrimeAssault:
+                        MenuPages.Add(id, new NavigationPage(new PrimeAssaultPage()));
                         break;
                     case (int)MenuItemEnum.Character:
                         MenuPages.Add(id, new NavigationPage(new CharIndexPage()));
