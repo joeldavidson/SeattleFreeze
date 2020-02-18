@@ -80,6 +80,7 @@
                                             Grid.Row="0"
                                             CornerRadius="40"
                                             BorderColor="Aqua"
+                                            Clicked="Attack_Clicked"
                                                 ></Button>
                                     <Button x:Name="btn2"
                                             VerticalOptions="Center"
@@ -90,6 +91,7 @@
                                             Grid.Row="1"
                                             CornerRadius="40"
                                             BorderColor="Aqua"
+                                            Clicked="Defense_Clicked"
                                                 ></Button>
                                     <Button x:Name="btn3"
                                             VerticalOptions="Center"
@@ -101,6 +103,7 @@
                                             Grid.Row="2"
                                             CornerRadius="40"
                                             BorderColor="Aqua"
+                                            Clicked="RangedDefense_Clicked"
                                                 ></Button>
                                     <Button x:Name="btn4"
                                             VerticalOptions="Center"
@@ -111,6 +114,7 @@
                                             Grid.Row="3"
                                             CornerRadius="40"
                                             BorderColor="Aqua"
+                                            Clicked="Speed_Clicked"
                                                 ></Button>
                                     <!--End of Column 2-->
 
