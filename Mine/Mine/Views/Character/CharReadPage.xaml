@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -72,7 +73,8 @@
                                             CornerRadius="40"
                                             BorderColor="Aqua"
                          Grid.Row="0" Grid.Column="0"
-                                                >
+                        Clicked="Attack_Clicked"                        
+                        >
                 </Button>
                 <Button x:Name="btn2"
                         VerticalOptions="Center"
@@ -82,6 +84,7 @@
                                             CornerRadius="40"
                                             BorderColor="Aqua"
                          Grid.Row="0" Grid.Column="1"
+                        Clicked="Defense_Clicked" 
                                                 ></Button>
                 <Button x:Name="btn3"
                         VerticalOptions="Center"
@@ -92,6 +95,7 @@
                                             CornerRadius="40"
                                             BorderColor="Aqua"
                          Grid.Row="0" Grid.Column="2"
+                        Clicked="RangedDefense_Clicked" 
                                                 ></Button>
                 <Button x:Name="btn4"
                                             VerticalOptions="Center"
@@ -101,7 +105,7 @@
                                             CornerRadius="40"
                                             BorderColor="Aqua"
                          Grid.Row="0" Grid.Column="3"
-                        
+                        Clicked="Speed_Clicked"                         
                                                 ></Button>
 
 

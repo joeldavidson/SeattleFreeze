@@ -42,5 +42,25 @@ namespace PrimeAssault.Views
             await Navigation.PushModalAsync(new NavigationPage(new CharDeletePage(new PlayerCharacterViewModel(viewModel.Data))));
             await Navigation.PopAsync();
         }
+
+        async void Attack_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Attack", "The Attack stat offers blah bla blah", "Dismiss");
+        }
+
+        async void Defense_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Defense", "The Defense stat offers blah bla blah", "Dismiss");
+        }
+        
+        async void RangedDefense_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Ranged Defense", "The Ranged Defense stat offers blah bla blah", "Dismiss");
+        }
+        
+        async void Speed_Clicked(object sender, EventArgs e)
+        {
+            await DisplayAlert("Character Speed", "The Speed stat offers blah bla blah", "Dismiss");
+        }
     }
 }

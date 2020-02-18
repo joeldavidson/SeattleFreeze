@@ -19,7 +19,7 @@ namespace PrimeAssault.Views
         }
         async void GameButton_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("SU", "Go RedHawks", "OK");
+            await DisplayAlert("SU", "Go RedHawks", "OK");
         }
     }
 
