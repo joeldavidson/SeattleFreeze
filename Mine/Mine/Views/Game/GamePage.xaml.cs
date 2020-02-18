@@ -10,14 +10,14 @@ using Xamarin.Forms.Xaml;
 namespace PrimeAssault.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GamePage : ContentPage
+    public partial class PrimeAssaultPage : ContentPage
     {
-        public GamePage()
+        public PrimeAssaultPage()
         {
             InitializeComponent();
 
         }
-        async void GameButton_Clicked(object sender, EventArgs e)
+        async void PrimeAssaultButton_Clicked(object sender, EventArgs e)
         {
             await DisplayAlert("SU", "Go RedHawks", "OK");
         }

@@ -1,7 +1,7 @@
 ﻿namespace PrimeAssault.Models
 {
     /// <summary>
-    /// Item for the Game
+    /// Item for the PrimeAssault
     /// </summary>
     public class ItemModel : BaseModel
     {

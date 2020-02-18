@@ -85,6 +85,8 @@ namespace PrimeAssault.Models
             Description = data.Description;
             Name = data.Name;
             level = data.level;
+            if (level > 20)
+                level = 20;
         }
 
         //provides multipliers for stats that are increased with every level
