@@ -230,6 +230,7 @@
                                                 BackgroundColor="##803f035f"
                                                 CornerRadius="40"
                                                 BorderColor="Aqua"
+                                            CommandParameter="{Binding id}"
                                             Clicked="Ring2_Clicked"
                                                 ></Button>
                                     <!--End of Column 7-->

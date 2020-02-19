@@ -19,6 +19,8 @@ namespace PrimeAssault.Views
         // The view model, used for data binding
         CharIndexViewModel viewModel;
 
+        ItemIndexViewModel ItemViewModel;
+
         /// <summary>
         /// Constructor for Index Page
         /// 
@@ -29,6 +31,7 @@ namespace PrimeAssault.Views
             InitializeComponent();
 
             BindingContext = viewModel = new CharIndexViewModel();
+            ItemViewModel = new ItemIndexViewModel();
         }
         /// <summary>
         /// The row selected from the list
@@ -124,9 +127,9 @@ namespace PrimeAssault.Views
             await DisplayAlert("Character Ring 1 Item", "blah bla blah", "Dismiss");
         }
 
-        async void Ring2_Clicked(object sender, EventArgs e)
+        async void Ring2_Clicked(object sender, EventArgs args)
         {
-            await DisplayAlert("Character Ring 2 Item", "blah bla blah", "Dismiss");
+            await Navigation.PushModalAsync(new NavigationPage(new ItemReadPage(new ItemViewModel())));
         }
     }
 }
